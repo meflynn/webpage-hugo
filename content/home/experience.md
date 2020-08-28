@@ -17,13 +17,23 @@ date_format = "Jan 2006"
 #   Required fields are `title`, `company`, and `date_start`.
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
+
+[[experience]]
+  title = "Associate Professor"
+  company = "Kansas State University"
+  company_url = ""
+  location = "Kansas"
+  date_start = "2018-08-15"
+  date_end = ""
+  description = """ """
+  
 [[experience]]
   title = "Assistant Professor"
   company = "Kansas State University"
   company_url = ""
   location = "Kansas"
   date_start = "2014-08-15"
-  date_end = ""
+  date_end = "2018-08-15"
   description = """ """
 
 [[experience]]
