@@ -47,7 +47,7 @@ education:
 social:
 - icon: "envelope"
   icon_pack: fas
-  link:meflynn@ksu.edu
+  link: mailto:meflynn@ksu.edu
 - icon: twitter
   icon_pack: fab
   link: https://twitter.com/michael_e_flynn
