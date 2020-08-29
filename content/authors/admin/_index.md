@@ -30,7 +30,7 @@ interests:
 
 education:
   courses:
-  - course: PhD in Artificial Intelligence
+  - course: PhD in Political Science
     institution: Binghamton University
     year: 2013
   - course: MA in Political Science
