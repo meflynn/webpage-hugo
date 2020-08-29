@@ -75,7 +75,7 @@ user_groups:
 
 My name is Michael Flynn. I’m currently an associate professor of political science and associate director of the security studies program at Kansas State University. My research focuses primarily on the political economy of states’ foreign policy behavior. My peer-reviewed research has appeared in the American Political Science Review, the British Journal of Political Science, International Studies Quarterly, and various other journals I have also published several blog posts or op-eds in outlets like the Monkey Cage, The Conversation, and Political Violence @ a Glance.
 
-I am currently working on two long-term projects: One project focuses on the politics of US overseas military deployments. A nother project focuses on the differences in Republican and Democratic positions on multilateralism in US foreign policy over time.
+I am currently working on two long-term projects: One project focuses on the politics of US overseas military deployments. Another project focuses on the differences in Republican and Democratic positions on multilateralism in US foreign policy over time.
 
 I also edit and contribute to the Quantitative Peace, a blog dedicated to political science, science fiction, pop culture, and other random thoughts.
 
