@@ -20,12 +20,12 @@
 
 [[main]]
   name = "Minerva"
-  url = "minerva"
+  url = "minerva/"
   weight = 60
 
 [[main]]
   name = "Student Resources"
-  url = "students"
+  url = "students/"
   weight = 70
 
 [[main]]
