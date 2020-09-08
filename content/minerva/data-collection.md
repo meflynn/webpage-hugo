@@ -2,7 +2,7 @@
 title: "Data Collection"
 menu:
   minerva:
-    weight: 1
+    weight: 2
     parent: Overview
 type: docs
 date: 
