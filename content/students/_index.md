@@ -35,5 +35,5 @@ Students deal with a lot. Aside from demanding class schedules, many students ar
   
 # Writing Resources
 
-  - [Google Scholar Instructions](static/files/student-resources/Google Scholar Instructions.pdf)
+  - [Google Scholar Instructions](static/files/student-resources/google-scholar.pdf)
   
