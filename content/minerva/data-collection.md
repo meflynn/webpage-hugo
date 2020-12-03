@@ -3,11 +3,11 @@ title: "Data Collection"
 menu:
   minerva:
     weight: 2
-    parent: Project Summary
+    parent: Project Components
 type: docs
 date: 
   weight: 1
 shiny: true
 ---
   
-This page provides access to the data and accompanying codebooks resulting from our three-year data collection effort.
+This page provides access to the data and accompanying code books resulting from our three-year data collection effort.
