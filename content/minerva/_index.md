@@ -1,9 +1,9 @@
 ---
-title: "Minerva Project"
+title: "Project Overview"
 menu:
   minerva:
     weight: 1
-    parent: Overview
+    parent: Minerva Project
 type: docs
 date: 
   weight: 1
