@@ -10,7 +10,7 @@ date:
 shiny: true
 ---
   
-My teaching focuses on international politics, US foreign policy, and research methodology. Below you can find a list of the undergraduate (UG) and graduate courses (G) I teach at Kansas State. 
+My teaching focuses on international politics, US foreign policy, and research methodology. Below you can find a list of the undergraduate (UG) and graduate courses (G) I teach at Kansas State. Eventually you will also be able to find links below to the individual course pages.
 
 - POLSC 133 World Politics (UG)
 - POLSC 343 US Foreign Policy (UG)
