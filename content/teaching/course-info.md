@@ -1,9 +1,9 @@
 ---
-title: "Courses"
+title: "Course  Information"
 menu:
   teaching:
     weight: 2
-    parent: Teaching
+    parent: Overview
 type: docs
 date: 
   weight: 1

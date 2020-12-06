@@ -1,7 +1,7 @@
 ---
 title: "Student Resources"
 menu:
-  students:
+  teaching:
     parent: Overview
     weight: 1
 type: docs
