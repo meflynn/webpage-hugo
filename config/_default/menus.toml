@@ -24,8 +24,8 @@
   weight = 60
 
 [[main]]
-  name = "Student Resources"
-  url = "students/"
+  name = "Teaching"
+  url = "teaching/"
   weight = 70
 
 [[main]]
