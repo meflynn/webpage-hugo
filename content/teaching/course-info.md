@@ -17,3 +17,5 @@ My teaching focuses on international politics, US foreign policy, and research m
 - POLSC 601 Political Economy of Conflict (UG)
 - POLSC 810 Security Studies Methodology (G)
 - POLSC 813 International Security (G)
+
+I'll post copies of my recent syllabi soon.
