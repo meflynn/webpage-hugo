@@ -2,8 +2,8 @@
 title: "Survey Data"
 menu:
   minerva:
-  weight: 2
-parent: Project Components
+    weight: 2
+    parent: Project Components
 type: docs
 date: 
   weight: 1
