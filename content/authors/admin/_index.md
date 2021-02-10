@@ -58,7 +58,7 @@ social:
   icon_pack: fab
   link: https://github.com/meflynn
 # Link to a PDF of your resume/CV from the About widget.
-# To enable, copy your resume/CV to `static/files/Flynn_CV.pdf` and uncomment the lines below.
+# To enable, copy your resume/CV to `static/files/flynn-cv.pdf` and uncomment the lines below.
 - icon: cv
   icon_pack: ai
   link: files/Flynn_CV.pdf
