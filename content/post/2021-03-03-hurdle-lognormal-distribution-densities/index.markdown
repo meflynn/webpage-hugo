@@ -22,6 +22,7 @@ I work a lot with military deployment data. Typically these are country-year obs
 
 
 ```r
+
 # Simulation . Values reflect what we see in our data.
 sims <- 1e4
 muval = 2.8
@@ -34,29 +35,21 @@ simvals[c(1:2000)] <- rep(0, sims*0.2)
 simvals[c(2001:10000)] <- rlnorm(sims*0.8, meanlog = muval, sdlog = sdval)
 simvals = as.data.frame(simvals)
 
-plot <- ggplot(simvals, aes(simvals)) +
+ggplot(simvals, aes(simvals)) +
   geom_histogram() +
   scale_x_continuous(limits = c(-1, 12))
-
-plot
-```
-
-```
 ## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
-```
-
-```
-## Warning: Removed 4354 rows containing non-finite values (stat_bin).
-```
-
-```
+## Warning: Removed 4310 rows containing non-finite values (stat_bin).
 ## Warning: Removed 2 rows containing missing values (geom_bar).
 ```
 
-<img src="{{< blogdown/postref >}}index_files/figure-html/simulated-data-fig-1.png" width="8in" />
+<img src="{{< blogdown/postref >}}index_files/figure-html/simulated-data-fig-1.png" width="8in" style="display: block; margin: auto;" />
 
 ```r
+
+
 #hist(log1p(simvals), breaks = 200)
+
 ```
 
 We've got about 20% zero values, and the non-zero values have a median of 16 and a mean of about 1,700. Conceivably every country *could* receive deployments, but some are highly unlikely to (e.g. North Korea). But even countries that do host US personnel tend to host very small deployments, as you can see by the relatively small median value. The mean is dragged upwards by large, long-standing legacy deployments in places like Germany, Japan, and South Korea. 
@@ -74,6 +67,7 @@ This is my shot at creating a probability density function...umm...function. I s
 
 
 ```r
+
 dhlnorm <- function(x, meanlog, sdlog, pval) {
   
     if (x > 0) {
@@ -94,9 +88,6 @@ dhlnorm <- function(x, meanlog, sdlog, pval) {
 prob <- dhlnorm(3, meanlog = muval, sdlog = sdval, pval = 0.2)
 
 print(prob)
-```
-
-```
 ## [1] 0.03346686
 ```
 
