@@ -31,7 +31,9 @@ simvals <- rep(NA, sims)
 simvals[c(1:2000)] <- rep(0, sims*0.2)
 simvals[c(2001:10000)] <- rlnorm(sims*0.8, meanlog = muval, sdlog = sdval)
 
-hist(log1p(simvals), breaks = 200)
+plot <- hist(log1p(simvals), breaks = 200)
+
+plot
 
 ```
 
