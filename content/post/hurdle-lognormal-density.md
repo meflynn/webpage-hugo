@@ -10,7 +10,7 @@ As a part of a larger project I've been working with BRMS and some models and fa
 
 I work a lot with military deployment data. Typically these are country-year observations of the number of US military personnel stationed in various overseas locations (think Germany, Japan, etc.). So far most of our work has treated deployments as a predictor variable, but more recently we've started thinking more about modeling deployment levels themselves. In general, there tends to be a ton of skew in these data. For example, from 1990 forward the troop deployment data we have are more or less distributed like this:
 
-```{r, echo = FALSE}
+```{r}
 
 sims <- 1e4
 muval = 2.8
@@ -58,9 +58,9 @@ dhlnorm <- function(x, meanlog, sdlog, pval) {
   }
 
 
-dhlnorm(3, meanlog = muval, sdlog = sdval, pval = 0.2)
+prob <- dhlnorm(3, meanlog = muval, sdlog = sdval, pval = 0.2)
 
-
+prob
 ```
 
 Again, this is very much on the frontiers of my experience, so if anyone has any feedback I'd appreciate it. I have some potential applications in mind, so this is more than just running down a rabbit hole.
