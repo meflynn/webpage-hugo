@@ -50,7 +50,7 @@ We've got about 20% zero values, and the non-zero values have a median of 16 and
 
 # Problem
 
-I'm glossing over a lot of the details here, but working on this has prompted me to think more about using hurdle models (like I already said). Yadda yadda yadda, this has led me to think about what a probability density function for a hurdle model looks like. The `{stats}` package in `R` comes with a set of functions for handling lognormal distributions, but doesn't appear to have anything to handle hurdle variants. Riffing off of the aforementioned `{countreg}` package, this is my attempt to create something comparable for hurdle lognormal distributions (I couldn't find one with Elaine).
+I'm glossing over a lot of the details here, but working on this has prompted me to think more about using hurdle models (like I already said). Yada yada yada, this has led me to think about what a probability density function for a hurdle model looks like. The `{stats}` package in `R` comes with a set of functions for handling lognormal distributions, but doesn't appear to have anything to handle hurdle variants. Riffing off of the aforementioned `{countreg}` package, this is my attempt to create something comparable for hurdle lognormal distributions (I couldn't find one with Elaine).
 
 <div class="tenor-gif-embed" data-postid="5569195" data-share-method="host" data-width="100%" data-aspect-ratio="1.4821428571428572"><a href="https://tenor.com/view/seinfeld-jason-alexander-george-costanza-yada-yada-yada-pissed-gif-5569195">Seinfeld Jason Alexander GIF</a> from <a href="https://tenor.com/search/seinfeld-gifs">Seinfeld GIFs</a></div><script type="text/javascript" async src="https://tenor.com/embed.js"></script>
 
