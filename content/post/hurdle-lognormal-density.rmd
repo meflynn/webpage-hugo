@@ -12,6 +12,7 @@ I work a lot with military deployment data. Typically these are country-year obs
 
 ```{r}
 
+# Simulation parameters
 sims <- 1e4
 muval = 2.8
 sdval = 2.54
