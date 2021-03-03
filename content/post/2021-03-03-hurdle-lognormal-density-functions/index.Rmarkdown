@@ -1,8 +1,12 @@
 ---
 title: Hurdle lognormal density functions?
-author: Michael Flynn
-date: "`Sys.Date()`"
+author: 'Michael Flynn'
+date: '2021-03-03'
+slug: [lognormaldensity]
+categories: [posts,stats]
+tags: [posts,stats]
 ---
+
 
 As a part of a larger project I've been working with BRMS and some models and family functions that are new to me. In particular, my work on troop deployments has made me think more about hurdle models. I've had some experience with zero-inflated models in the past, but haven't spent a lot of time with hurdle models, specifically. Anyway, without going down the rabbit hole, I've been thinking about how to create probability density functions for some of these models. The `{countreg}` package contains some functions for hurdle negative binomial models, which got me thinking about building something similar for hurdle lognormal distributions. I'm really operating one the frontiers of my own experience/abilities, so I may be way off here, but let's give this a shot and see if it works.
 
