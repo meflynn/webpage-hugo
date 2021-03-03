@@ -49,7 +49,7 @@ I'm glossing over a lot of the details here, but working on this has prompted me
 <div class="tenor-gif-embed" data-postid="5569195" data-share-method="host" data-width="100%" data-aspect-ratio="1.4821428571428572"><a href="https://tenor.com/view/seinfeld-jason-alexander-george-costanza-yada-yada-yada-pissed-gif-5569195">Seinfeld Jason Alexander GIF</a> from <a href="https://tenor.com/search/seinfeld-gifs">Seinfeld GIFs</a></div><script type="text/javascript" async src="https://tenor.com/embed.js"></script>
 
 
-# Attempt
+# Maybe a working probability density function?
 
 This is my shot at creating a probability density function...umm...function. I started with the builtin `dlnorm()` function, but the problem is that it only accepts positive values. If we have a lot of data that are failing to cross that hurdle (i.e. 0 values) then this doesn't really work. I think the solution is to insert an argument that details the propotion/probability of 0 values in the data (i.e. the `pval` argument). For non-zero values we have to first get the probability using `dlnorm()`. Once we generate the probability value for the `x` value using `dlnorm()` we then have to weight that probability value by the proportion of non-zero values in the data. In this case we enter a `pval` argument of 0.2 since 20% of the data are 0s, but when we calculate the probabiltiy for some values > 0 we want to make sure that's weighted by 0.8 since 80% of observations are >  0. If `x` equals zero then the probability should (I think?) just default to the `pval` argument.
 
