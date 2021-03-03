@@ -30,7 +30,7 @@ Students often ask for advice on how to succeed in class. The following is a lis
 
 Students deal with a lot. Aside from demanding class schedules, many students are also dealing with complicated personal lives, family issues, or working multiple jobs to make ends meet. This can take a toll on students, and many may be dealing with depression, anxiety, food insecurity, or other issues that can make it difficult to keep up in the classroom. The sheet below provides a variety of on-campus and off-campus resources for students.
 
-  - [Student Resource Sheet]("static/files/student-resources/student-resource-sheet.pdf")
+  - {{% staticref "files/student-resources/student-resource-sheet.pdf"%}}Student Resource Sheet{{% /staticref %}}
 
   
 # Writing Resources
