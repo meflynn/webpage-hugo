@@ -3,18 +3,20 @@ title: Hurdle lognormal distribution densities?
 author: Michael Flynn
 date: '2021-03-03'
 slug: []
-math: true
 categories:
   - Blogging
   - stats
 tags:
   - blogging
   - stats
+math: true
 ---
 
 ```{r setup, include = FALSE}
 library(ggplot2)
 library(stats)
+knitr::opts_chunk$set(fig.width = 6, fig.asp = 0.618, fig.align = "center", 
+                      fig.retina = 3, out.width = "75%", collapse = TRUE)
 
 ```
 
@@ -24,7 +26,7 @@ As a part of a larger project I've been working with BRMS and some models and fa
 
 I work a lot with military deployment data. Typically these are country-year observations of the number of US military personnel stationed in various overseas locations (think Germany, Japan, etc.). So far most of our work has treated deployments as a predictor variable, but more recently we've started thinking more about modeling deployment levels themselves. In general, there tends to be a ton of skew in these data. For example, from 1990 forward the troop deployment data we have are more or less distributed like this:
 
-```{r simulated-data-fig, dpi = 400, out.width="8in", fig.keep='all'}
+```{r simulated-data-fig, dpi = 400}
 
 # Simulation . Values reflect what we see in our data.
 sims <- 1e4
@@ -36,15 +38,9 @@ pival = 0.2
 simvals <- rep(NA, sims)
 simvals[c(1:2000)] <- rep(0, sims*0.2)
 simvals[c(2001:10000)] <- rlnorm(sims*0.8, meanlog = muval, sdlog = sdval)
-simvals = as.data.frame(simvals)
 
-plot <- ggplot(simvals, aes(simvals)) +
-  geom_histogram() +
-  scale_x_continuous(limits = c(-1, 12))
 
-plot
-
-#hist(log1p(simvals), breaks = 200)
+hist(log1p(simvals), breaks = 200, main = "Distribution of Simulated Troop Data")
 
 
 
