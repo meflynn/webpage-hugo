@@ -3,6 +3,7 @@ title: Hurdle lognormal distribution densities?
 author: Michael Flynn
 date: '2021-03-03'
 slug: []
+math: true
 categories:
   - Blogging
   - stats
@@ -10,6 +11,7 @@ tags:
   - blogging
   - stats
 ---
+
 
 
 As a part of a larger project I've been working with BRMS and some models and family functions that are new to me. In particular, my work on troop deployments has made me think more about hurdle models. I've had some experience with zero-inflated models in the past, but haven't spent a lot of time with hurdle models, specifically. Anyway, without going down the rabbit hole, I've been thinking about how to create probability density functions for some of these models. The `{countreg}` package contains some functions for hurdle negative binomial models, which got me thinking about building something similar for hurdle lognormal distributions. I'm really operating one the frontiers of my own experience/abilities, so I may be way off here, but let's give this a shot and see if it works.
@@ -20,7 +22,7 @@ I work a lot with military deployment data. Typically these are country-year obs
 
 
 ```r
-# Simulation parameters
+# Simulation . Values reflect what we see in our data.
 sims <- 1e4
 muval = 2.8
 sdval = 2.54
@@ -30,11 +32,32 @@ pival = 0.2
 simvals <- rep(NA, sims)
 simvals[c(1:2000)] <- rep(0, sims*0.2)
 simvals[c(2001:10000)] <- rlnorm(sims*0.8, meanlog = muval, sdlog = sdval)
+simvals = as.data.frame(simvals)
 
-hist(log1p(simvals), breaks = 200)
+plot <- ggplot(simvals, aes(simvals)) +
+  geom_histogram() +
+  scale_x_continuous(limits = c(-1, 12))
+
+plot
 ```
 
-<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-1-1.png" width="672" />
+```
+## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+```
+
+```
+## Warning: Removed 4354 rows containing non-finite values (stat_bin).
+```
+
+```
+## Warning: Removed 2 rows containing missing values (geom_bar).
+```
+
+<img src="{{< blogdown/postref >}}index_files/figure-html/simulated-data-fig-1.png" width="8in" />
+
+```r
+#hist(log1p(simvals), breaks = 200)
+```
 
 We've got about 20% zero values, and the non-zero values have a median of 16 and a mean of about 1,700. Conceivably every country *could* receive deployments, but some are highly unlikely to (e.g. North Korea). But even countries that do host US personnel tend to host very small deployments, as you can see by the relatively small median value. The mean is dragged upwards by large, long-standing legacy deployments in places like Germany, Japan, and South Korea. 
 

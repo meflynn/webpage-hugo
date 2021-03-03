@@ -18,7 +18,7 @@ tags:
 <div id="background" class="section level1">
 <h1>Background</h1>
 <p>I work a lot with military deployment data. Typically these are country-year observations of the number of US military personnel stationed in various overseas locations (think Germany, Japan, etc.). So far most of our work has treated deployments as a predictor variable, but more recently we’ve started thinking more about modeling deployment levels themselves. In general, there tends to be a ton of skew in these data. For example, from 1990 forward the troop deployment data we have are more or less distributed like this:</p>
-<pre class="r"><code># Simulation parameters
+<pre class="r"><code># Simulation . Values reflect what we see in our data.
 sims &lt;- 1e4
 muval = 2.8
 sdval = 2.54
@@ -28,9 +28,18 @@ pival = 0.2
 simvals &lt;- rep(NA, sims)
 simvals[c(1:2000)] &lt;- rep(0, sims*0.2)
 simvals[c(2001:10000)] &lt;- rlnorm(sims*0.8, meanlog = muval, sdlog = sdval)
+simvals = as.data.frame(simvals)
 
-hist(log1p(simvals), breaks = 200)</code></pre>
-<p><img src="{{< blogdown/postref >}}index_files/figure-html/simulated-data-1.png" width="672" /></p>
+plot &lt;- ggplot(simvals, aes(simvals)) +
+  geom_histogram() +
+  scale_x_continuous(limits = c(-1, 12))
+
+plot</code></pre>
+<pre><code>## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
+<pre><code>## Warning: Removed 4463 rows containing non-finite values (stat_bin).</code></pre>
+<pre><code>## Warning: Removed 2 rows containing missing values (geom_bar).</code></pre>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/simulated-data-1.png" width="8in" /></p>
+<pre class="r"><code>#hist(log1p(simvals), breaks = 200)</code></pre>
 <p>We’ve got about 20% zero values, and the non-zero values have a median of 16 and a mean of about 1,700. Conceivably every country <em>could</em> receive deployments, but some are highly unlikely to (e.g. North Korea). But even countries that do host US personnel tend to host very small deployments, as you can see by the relatively small median value. The mean is dragged upwards by large, long-standing legacy deployments in places like Germany, Japan, and South Korea.</p>
 </div>
 <div id="problem" class="section level1">
