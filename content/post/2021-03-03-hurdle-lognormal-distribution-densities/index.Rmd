@@ -1,12 +1,14 @@
 ---
-title: Hurdle lognormal density functions?
-author: 'Michael Flynn'
+title: Hurdle lognormal distribution densities?
+author: Michael Flynn
 date: '2021-03-03'
-slug: [lognormaldensity]
-categories: [posts,stats]
-tags: [posts,stats]
-output:
-  blogdown::html_page
+slug: []
+categories:
+  - Blogging
+  - stats
+tags:
+  - blogging
+  - stats
 ---
 
 
