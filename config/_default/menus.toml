@@ -24,6 +24,11 @@
   weight = 60
 
 [[main]]
+  name = "Software"
+  url = "software/"
+  weight = 65
+
+[[main]]
   name = "Teaching"
   url = "teaching/"
   weight = 70

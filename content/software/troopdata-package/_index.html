@@ -1,0 +1,195 @@
+---
+title: "`{troopdata}`: Tools for Analyzing Cross-National Military Deployment and Basing Data"
+menu: 
+  software:
+    weight: 2
+    parent: Software
+type: docs
+shiny: true
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<!-- badges: start -->
+<!-- badges: end -->
+<p><img src="logo.png" alt="troopdata hex logo" align="right" width="200" style="padding: 0 15px; float: right;"/></p>
+<pre class="r"><code>library(badger)</code></pre>
+<pre><code>## Warning: package &#39;badger&#39; was built under R version 4.0.4</code></pre>
+<pre class="r"><code>library(ggtext)</code></pre>
+<pre><code>## package is up-to-date devel version</code></pre>
+<p><a href="https://cran.r-project.org/package=troopdata"><img src="https://www.r-pkg.org/badges/version/troopdata?color=blue" /></a> <a href="https://github.com/meflynn/troopdata"><img src="https://img.shields.io/badge/devel%20version-0.1.2-green.svg" /></a> <a href="https://cran.r-project.org/package=troopdata"><img src="http://cranlogs.r-pkg.org/badges/grand-total/troopdata?color=orange" /></a> <a href="https://cran.r-project.org/package=troopdata"><img src="http://cranlogs.r-pkg.org/badges/last-month/troopdata?color=red" /></a> <a href="https://cran.r-project.org/package=troopdata"><img src="http://cranlogs.r-pkg.org/badges/last-week/troopdata?color=yellow" /></a></p>
+<p>The goal of the troopdata package is to facilitate the distribution of military deployment and basing data for use in social science research and journalism. The troop deployment data were initially compiled by Tim Kane using information obtained from the U.S. Department of Defense’s Defense Manpower Data Center (DMDC). The original data ended in 2005 and we have updated it to run through 2020. Similarly, the basing data were initially compiled by David Vine, and we have updated the original data using open source information from the U.S. military and press reports through 2018. We have also assembled this R package to allow users to more easily access the data and use it in their own research.</p>
+<p>The package will be updated with additional features in the future, but for now please let me know if you find any errors.</p>
+<p>Please refer to the bottom of this page for citation information.</p>
+<div id="installation" class="section level2">
+<h2>Installation</h2>
+<p>You can install the <code>troopdata</code> package from <a href="https://cran.r-project.org/package=troopdata">CRAN</a> or <a href="https://github.com/">GitHub</a> with:</p>
+<pre class="r"><code># install.packages(&quot;devtools&quot;)
+install.package(&quot;troopdata)
+devtools::install_github(&quot;meflynn/troopdata&quot;)</code></pre>
+</div>
+<div id="use" class="section level2">
+<h2>Use</h2>
+<p>This package currently has two functions:</p>
+<p><code>get_troopdata()</code>: Returns a data frame containing country-year U.S. military deployment values. Depending on the arguments specified, either total troop deployments, or total deployments plus service branch-specific deployment values, are returned.</p>
+<p><code>get_basedata()</code>: Returns a data frame containing information on U.S. military bases around the globe from the Cold War forward. Depending on the arguments specified the function will return the entire data set or data for a particular country. Observations can be site-specific or can be aggregated to generate country counts.</p>
+</div>
+<div id="example" class="section level2">
+<h2>Example</h2>
+<div id="get_troopdata" class="section level3">
+<h3><code>get_troopdata</code></h3>
+<p>The first function of this package is the <code>get_troopdata()</code> function. At its most basic this function returns a data frame of country-year troop deployment values for the selected time period, using the <code>startdate</code> and <code>enddate</code> parameters.</p>
+<p>For users who want more refined data, the <code>host</code> argument and the <code>branch</code> arguments allow users to specify the set of host countries for which they would like data returned. This must be a single numerical value equal to a Correlates of War (COW) Project country code, a single character value equal to an ISO3C country code, or a vector of similar values. Note they must be consistent (i.e. they must all be numeric COW codes or ISO3C character codes).</p>
+<p>For example, you can use a numeric vector of COW country codes:</p>
+<pre class="r"><code># Let&#39;s make the host selection more specific
+hostlist &lt;- c(200, 220)
+
+example &lt;- get_troopdata(host = hostlist, startyear = 1990, endyear = 2020)</code></pre>
+<pre><code>## Warning in if (is.na(host)) {: the condition has length &gt; 1 and only the first
+## element will be used</code></pre>
+<pre class="r"><code>head(example)</code></pre>
+<pre><code>## # A tibble: 6 x 9
+##   countryname    ccode iso3c  year troops  army  navy air_force marine_corps
+##   &lt;chr&gt;          &lt;dbl&gt; &lt;chr&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;        &lt;dbl&gt;
+## 1 United Kingdom   200 GBR    1990  25111    NA    NA        NA           NA
+## 2 United Kingdom   200 GBR    1991  23442    NA    NA        NA           NA
+## 3 United Kingdom   200 GBR    1992  20048    NA    NA        NA           NA
+## 4 United Kingdom   200 GBR    1993  16100    NA    NA        NA           NA
+## 5 United Kingdom   200 GBR    1994  13781    NA    NA        NA           NA
+## 6 United Kingdom   200 GBR    1995  12131    NA    NA        NA           NA</code></pre>
+<p>Or you can use a character vector of ISO3C codes.</p>
+<pre class="r"><code>hostlist.char &lt;- c(&quot;CAN&quot;, &quot;GBR&quot;)
+
+example.char &lt;- get_troopdata(host = hostlist.char, startyear = 1970, endyear = 2020)</code></pre>
+<pre><code>## Warning in if (is.na(host)) {: the condition has length &gt; 1 and only the first
+## element will be used</code></pre>
+<pre class="r"><code>head(example.char)</code></pre>
+<pre><code>## # A tibble: 6 x 9
+##   countryname ccode iso3c  year troops  army  navy air_force marine_corps
+##   &lt;chr&gt;       &lt;dbl&gt; &lt;chr&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;        &lt;dbl&gt;
+## 1 Canada         20 CAN    1970   2643    NA    NA        NA           NA
+## 2 Canada         20 CAN    1971   1835    NA    NA        NA           NA
+## 3 Canada         20 CAN    1972   1742    NA    NA        NA           NA
+## 4 Canada         20 CAN    1973   1362    NA    NA        NA           NA
+## 5 Canada         20 CAN    1974   1580    NA    NA        NA           NA
+## 6 Canada         20 CAN    1975   1301    NA    NA        NA           NA</code></pre>
+<pre class="r"><code>hostlist &lt;- c(20, 200, 220)
+
+example &lt;- get_troopdata(host = hostlist, branch = TRUE, startyear = 2006, endyear = 2020)</code></pre>
+<pre><code>## Warning: Branch data only available for 2006 forward.</code></pre>
+<pre><code>## Warning in if (is.na(host)) {: the condition has length &gt; 1 and only the first
+## element will be used</code></pre>
+<pre class="r"><code>head(example)</code></pre>
+<pre><code>## # A tibble: 6 x 9
+##   countryname ccode iso3c  year troops  army  navy air_force marine_corps
+##   &lt;chr&gt;       &lt;dbl&gt; &lt;chr&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;        &lt;dbl&gt;
+## 1 Canada         20 CAN    2006    133     7    35        81           10
+## 2 Canada         20 CAN    2007    141     7    41        84            9
+## 3 Canada         20 CAN    2008     92     8     0        82            2
+## 4 Canada         20 CAN    2009     91     8     0        83            0
+## 5 Canada         20 CAN    2010    129     3    28        98            0
+## 6 Canada         20 CAN    2011    128     7    38        83            0</code></pre>
+</div>
+<div id="get_basedata" class="section level3">
+<h3><code>get_basedata</code></h3>
+<p>The second function, <code>get_basedata()</code> returns a data frame containing information on the United States’ overseas military bases going back to the beginning of the Cold War. At its most basic the function will return a data frame containing country-base observations, along with the facility’s longitude and latitude (if available), and a series of binary variables indicating whether or not the facility is a full military base, a smaller lilypad, and if it is a currently funded site.</p>
+<pre class="r"><code>baseexample &lt;- get_basedata(host = NA, country_count = FALSE)
+
+head(baseexample)</code></pre>
+<pre><code>## # A tibble: 6 x 9
+##   countryname ccode iso3c basename            lat   lon  base lilypad fundedsite
+##   &lt;chr&gt;       &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;             &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;   &lt;dbl&gt;      &lt;dbl&gt;
+## 1 Afghanistan   700 AFG   Bagram AB          34.9  69.3     1       0          0
+## 2 Afghanistan   700 AFG   Kandahar Airfield  31.5  65.8     1       0          0
+## 3 Afghanistan   700 AFG   Mazar-e-Sharif     36.7  67.2     1       0          0
+## 4 Afghanistan   700 AFG   Gardez             33.6  69.2     1       0          0
+## 5 Afghanistan   700 AFG   Kabul              34.5  69.2     1       0          0
+## 6 Afghanistan   700 AFG   Herat              34.3  62.2     1       0          0</code></pre>
+<p>As with the <code>get_troopdata()</code> function you can specify a numeric vector of COW country codes or a character vector of ISO3C codes to specify specific host countries.</p>
+<p>For example, using COW country codes:</p>
+<pre class="r"><code>hostlist &lt;- c(20, 200, 255, 645)
+
+baseexample &lt;- get_basedata(host = hostlist, country_count = FALSE)</code></pre>
+<pre><code>## Warning in if (!is.numeric(host) &amp; !is.character(host) &amp; !is.na(host)) {: the
+## condition has length &gt; 1 and only the first element will be used</code></pre>
+<pre><code>## Warning in if (is.na(host)) {: the condition has length &gt; 1 and only the first
+## element will be used</code></pre>
+<pre class="r"><code>head(baseexample)</code></pre>
+<pre><code>## # A tibble: 6 x 9
+##   countryname     ccode iso3c basename       lat    lon  base lilypad fundedsite
+##   &lt;chr&gt;           &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;        &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt;   &lt;dbl&gt;      &lt;dbl&gt;
+## 1 Ascension Isla~   200 GBR   Ascension I~ -7.95  -14.4     1       0          0
+## 2 BR Indian Ocea~   200 GBR   Diego Garcia -7.32   72.4     1       0          0
+## 3 Canada             20 CAN   &lt;NA&gt;         56.1  -106.      0       1          0
+## 4 Canada             20 CAN   Argentia, N~ 47.3   -54.0     1       0          0
+## 5 Germany           255 DEU   Amberg       49.4    11.9     1       0          0
+## 6 Germany           255 DEU   USAG Ansbach 49.3    10.6     1       0          0</code></pre>
+<p>And another using ISO3C codes:</p>
+<pre class="r"><code>hostlist.char &lt;- c(&quot;CAN&quot;, &quot;GBR&quot;, &quot;PRI&quot;)
+
+baseexample &lt;- get_basedata(host = hostlist.char, country_count = FALSE)</code></pre>
+<pre><code>## Warning in if (!is.numeric(host) &amp; !is.character(host) &amp; !is.na(host)) {: the
+## condition has length &gt; 1 and only the first element will be used</code></pre>
+<pre><code>## Warning in if (is.na(host)) {: the condition has length &gt; 1 and only the first
+## element will be used</code></pre>
+<p>Finally, users can also generate country-level counts of the number of U.S. military bases by changing the <code>country_count</code> argument to <code>TRUE</code>.</p>
+<pre class="r"><code>hostlist &lt;- c(20, 200, 255, 645)
+
+baseexample &lt;- get_basedata(host = hostlist, country_count = TRUE)</code></pre>
+<pre><code>## Warning in if (!is.numeric(host) &amp; !is.character(host) &amp; !is.na(host)) {: the
+## condition has length &gt; 1 and only the first element will be used</code></pre>
+<pre><code>## Warning in if (is.na(host)) {: the condition has length &gt; 1 and only the first
+## element will be used</code></pre>
+<pre class="r"><code>head(baseexample)</code></pre>
+<pre><code>## # A tibble: 6 x 9
+##   countryname     ccode iso3c basename       lat    lon  base lilypad fundedsite
+##   &lt;chr&gt;           &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;        &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt;   &lt;dbl&gt;      &lt;dbl&gt;
+## 1 Ascension Isla~   200 GBR   Ascension I~ -7.95  -14.4     1       0          0
+## 2 BR Indian Ocea~   200 GBR   Diego Garcia -7.32   72.4     1       0          0
+## 3 Canada             20 CAN   &lt;NA&gt;         56.1  -106.      0       1          0
+## 4 Canada             20 CAN   Argentia, N~ 47.3   -54.0     1       0          0
+## 5 Germany           255 DEU   Amberg       49.4    11.9     1       0          0
+## 6 Germany           255 DEU   USAG Ansbach 49.3    10.6     1       0          0</code></pre>
+</div>
+</div>
+<div id="applications" class="section level2">
+<h2>Applications</h2>
+<p>So what can you do with these super useful and cool data? Lots of things! The study of basing and military deployments has been picking up over the last few years and there are lots of cool studies you should check out. With these data you can do cool things like this!</p>
+<pre class="r"><code>library(ggplot2)
+
+map &lt;- ggplot2::map_data(&quot;world&quot;)
+basepoints &lt;- get_basedata(host = NA)
+
+
+basemap &lt;- ggplot() +
+  geom_polygon(data = map, aes(x = long, y = lat, group = group), fill = &quot;gray80&quot;, color = &quot;white&quot;, size = 0.1) +
+  geom_point(data = basepoints, aes(x = lon, y = lat), color = &quot;purple&quot;, alpha = 0.6) +
+  coord_equal(ratio = 1.3) +
+  theme_void() +
+  theme(plot.title = element_markdown(face = &quot;bold&quot;, size = 15)) +
+  labs(title = &quot;Locations of U.S. military facilities, 1950-2018&quot;)
+
+
+basemap</code></pre>
+<p><img src="/software/troopdata-package/_index_files/figure-html/unnamed-chunk-9-1.png" width="2800" /></p>
+</div>
+<div id="a-note-on-country-codes" class="section level2">
+<h2>A note on country codes</h2>
+<p>The original DMDC data contain information on U.S. troop deployments to a a wide range of locations, including several non-state territories. One downside of using the COW country codes as the primary host ID variable is that there are often no country codes for smaller states and territories. In the case of the Vine basing data, some smaller territories have COW codes for the imperial power that controls a territory. For example, Puerto Rico and Guam both receive a COW country code of 2 as they are territorial possessions of the United States. Users may want to distinguish such cases where deployments are present in a territory versus the metropole. Using the ISO country codes provides some additional flexibility when calling the data. Worst case, you can pull the full data frame and look around at the specific observations and figure out what best suits your needs.</p>
+</div>
+<div id="how-to-cite-this-package-and-data" class="section level2">
+<h2>How to cite this package and data?</h2>
+<p>When using the updated troop deployment data and/or the <code>troopdata</code> package please cite the following:</p>
+<ul>
+<li>Allen, Michael A., Michael E. Flynn, and Carla Martinez Machain. 2021. “Global U.S. military deployment data: 1950-2020.” <em>Working Paper</em></li>
+</ul>
+<p>Kane’s original troop deployment data collected from 1950-2005:</p>
+<ul>
+<li>Kane, Tim. 2005. “Global U.S. troop deployment, 1950-2003.” Technical Report. Heritage Foundation, Washington, D.C.</li>
+</ul>
+<p>Vine’s original basing data:</p>
+<ul>
+<li>Vine, David. 2015. “Base nation: How U.S. military bases abroad harm America and the World.” Metropolitan Books, Washington, D.C.</li>
+</ul>
+</div>
