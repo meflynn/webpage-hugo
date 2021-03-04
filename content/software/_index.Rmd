@@ -6,4 +6,4 @@ title: Software
 This page contains information on R software packages that I've developed.
 
 
-- `{troopdata}`: [CRAN](https://cran.r-project.org/package=troopdata); [GitHub](https://github.com/meflynn/troopdata); [README](troopdata-package/_index.Rmd)
+- `{troopdata}`: [CRAN](https://cran.r-project.org/package=troopdata); [GitHub](https://github.com/meflynn/troopdata)
