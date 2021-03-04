@@ -2,6 +2,8 @@
 .idea/
 
 # Hugo
-resources/
-public/
+/resources/
+/public/
 .Rproj.user
+DS_Store
+Thumbs.db
