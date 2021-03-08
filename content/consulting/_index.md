@@ -28,4 +28,4 @@ No matter your needs, my approach always prioritizes developing a better underst
 
 If you're interested, please send me an email. I'm happy to talk more.
 
-<i class="fas fa-envelope" style="color:blue"></i> [flynn.michael.e@gmail.com](mailto:flynn.michael.e@gmail.com)
+<i class="fas fa-envelope" style="color:blue; padding-right: 5px"></i> [flynn.michael.e@gmail.com](mailto:flynn.michael.e@gmail.com)
