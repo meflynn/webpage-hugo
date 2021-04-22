@@ -2,23 +2,19 @@
 title: On software choice
 author: Michael Flynn
 date: '2021-04-22'
-slug: []
 categories:
   - Blogging
   - stats
 tags:
   - blogging
   - stats
-subtitle: ''
-summary: 'Thoughts on switching from Stata to R'
-authors: []
+summary: Thoughts on switching from Stata to R
 lastmod: '2021-04-22T12:32:39-05:00'
 featured: no
 image:
   caption: ''
   focal_point: ''
   preview_only: no
-projects: []
 ---
 
 
@@ -34,17 +30,17 @@ I'm not going to delve much into the motivations for various faculty avoiding R 
 This post is really primarily about my thoughts on switching from someone who uses R to an R user. I think this is a distinction with a meaningful difference, and it definitely pertains to some of these issues. I went from someone who was trained on and primarily used Stata for all of my work-related modeling (as well as other stuff, like tracking my cat's weight when he was sick) to someone who uses R for just about everything, from modeling, to writing letters, to building my website. Suffice it to say, I'm currently a big fan.
 
 What this post is not intended to be is a screed about why R is *objectively* the best programming language/platform for social scientists. That said, I do think it's *subjectively* the best. I learned R about a decade ago while I was still using Stata for most of my work, but remained a very casual user and it took me another several years to make the switch. Part of this was because it felt like the learning curve was pretty long and arduous. Even now, there are a lot of things about R that are a massive pain in the ass. For example, the tedious process of updating a particular package when you have five projects up and running, or a package with a given function name masking the identically-named function you *really* want to call. I'm looking at you `{plyr}`. Even still, I lose a lot of time dealing with some of these issues, so I completely understand and even share a lot of the frustrations that people have with R. Hence the disclaimer about it not being *objectively* best. But, *subjectively* I think it has a lot of qualities that are desirable, and even better than, many of the other major software packages used by social scientists. The rest of this post is intended to highlight some of these benefits. 
-
+ 
 
 # Cost
 
-First, the most basic issue. Stata was always fairly expensive, but in the last year or two they announced that they were switching to an annual subscription model as opposed to the one-time charge for a perpetual license for whatever version you happened to purchase. Even when I started buying Stata as a graduate student in 2007, it was pretty expensive considering that I was making all of $17,000 per year before taxes. For students who are currently looking to purcahse Stata, Stata SE is running $179 per year for *student* pricing. The multicore variant is upwards of $375 per year. That's a lot.
+First, the most basic issue. Stata was always fairly expensive, but in the last year or two they announced that they were switching to an annual subscription model as opposed to the one-time charge for a perpetual license for whatever version you happened to purchase. Even when I started buying Stata as a graduate student in 2007, it was pretty expensive considering that I was making all of 17,000 per year before taxes. For students who are currently looking to purchase Stata Stata SE is running 179 per year for *student* pricing. The multicore variant is upwards of 175 per year. That's a lot. 
 
 The upside of R here is clear—it's free. To be clear, there *can* be costs associated with using R and some of the packages you can run across. Querying Google Maps, for example, can incur costs if you run over a certain threshold. But if your goal is primarily to read in data, clean it, and run a linear regression you're on solid ground.
 
-Resources for students in many PhD programs have been getting slim for a while now. Particularly at state schools. And while faculty often have limited control over the baseline rate of pay for graduate students at these institutions, one thing we can control is the cost associated with things like books, software, etc. Is $180 going to break the bank for a graduate student? Maybe not, but it's also lumped in with a lot of other costs that they incurring while in graduate school. 
+Resources for students in many PhD programs have been getting slim for a while now. Particularly at state schools. And while faculty often have limited control over the baseline rate of pay for graduate students at these institutions, one thing we can control is the cost associated with things like books, software, etc. Is \$180 going to break the bank for a graduate student? Maybe not, but it's also lumped in with a lot of other costs that they incurring while in graduate school. 
 
-It's also not unreasonable to expect that graduate students will need more powerful tools to do the kind of work they're pursuing. Maybe work that they, or their advisers, are conducting requires more powerful software capabilities. With Stata MP running from about $300—$400 per year, that's a pretty huge cost. While faculty may have funds to pay for this kind of thing, graduate students might not. This creates a kind of capabilities gap between graduate students and faculty in a way that's nowhere near as evident with alternatives like R. Maybe some departments have licenses to run better versions on multiple lab computers, but this is also a massive expense that many departments may not be in a position to keep up either. 
+It's also not unreasonable to expect that graduate students will need more powerful tools to do the kind of work they're pursuing. Maybe work that they, or their advisers, are conducting requires more powerful software capabilities. With Stata MP running from about 300-400 per year, that's a pretty huge cost. While faculty may have funds to pay for this kind of thing, graduate students might not. This creates a kind of capabilities gap between graduate students and faculty in a way that's nowhere near as evident with alternatives like R. Maybe some departments have licenses to run better versions on multiple lab computers, but this is also a massive expense that many departments may not be in a position to keep up either. 
 
 
 # Out of date software?
