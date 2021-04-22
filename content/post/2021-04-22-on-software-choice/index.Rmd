@@ -2,23 +2,23 @@
 title: On software choice
 author: Michael Flynn
 date: '2021-04-22'
+slug: []
 categories:
   - Blogging
-  - R
-  - software
   - stats
 tags:
   - blogging
-  - R
-  - software
   - stats
-lastmod: '2021-04-22T12:04:23-05:00'
-summary: 'Thoughts on switching from Stata to R and why it matters'
+subtitle: ''
+summary: 'Thoughts on switching from Stata to R'
+authors: []
+lastmod: '2021-04-22T12:32:39-05:00'
 featured: no
 image:
   caption: ''
   focal_point: ''
   preview_only: no
+projects: []
 ---
 
 
