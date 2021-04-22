@@ -3,6 +3,7 @@ title: Software choice
 author: Michael Flynn
 date: '2021-04-22'
 slug: []
+draft: false
 categories:
   - Blogging
   - stats
