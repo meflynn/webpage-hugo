@@ -13,7 +13,7 @@ tags:
   - stats
   - software
   - R
-subtitle: ''
+subtitle: "If Stata or SPSS works well enough for what you do, that's great—You should keep using the tool that makes you better at your job! However, as university faculty we're not just making choices for ourselves, but for the students we teach. And those choices have a lot of knock-on effects. In general I think we should tend to err on the side of lowering barriers to entry for students and providing them with the most flexible tools for the job they want to have, but also the jobs they *might* have. While R has a lot of problems and quirks, I think it's the best *relative* option considering these various factors."
 summary: ''
 authors: []
 lastmod: '2021-04-22T08:29:16-05:00'
@@ -29,7 +29,7 @@ projects: []
 tldr; If Stata or SPSS works well enough for what you do, that's great—You should keep using the tool that makes you better at your job! However, as university faculty we're not just making choices for ourselves, but for the students we teach. And those choices have a lot of knock-on effects. In general I think we should tend to err on the side of lowering barriers to entry for students and providing them with the most flexible tools for the job they want to have, but also the jobs they *might* have. While R has a lot of problems and quirks, I think it's the best *relative* option considering these various factors.
 
 
-This post is about ghe glories of R. Not really. But kind of? This recent tweet gained some traction and generated a bit of discussion on the subject of proprietary software vs open source alternatives like R:
+This post is about the glories of R. Not really. But kind of? This recent tweet gained some traction and generated a bit of discussion on the subject of proprietary software vs open source alternatives like R:
 
 
 
