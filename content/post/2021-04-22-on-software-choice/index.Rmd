@@ -14,7 +14,7 @@ tags:
   - software
   - stats
 subtitle: ''
-summary: ''
+summary: 'Some thoughts on my own move from Stata to R and why software choice matters'
 authors: []
 lastmod: '2021-04-22T12:04:23-05:00'
 featured: no
