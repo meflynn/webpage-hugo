@@ -13,8 +13,8 @@ tags:
   - R
   - software
   - stats
-subtitle: 'Longer thoughts on my move from Stata to R'
-summary: ''
+subtitle: ''
+summary: 'Longer thoughts on my move from Stata to R'
 authors: []
 lastmod: '2021-04-22T12:04:23-05:00'
 featured: no
