@@ -14,5 +14,6 @@ This page is dedicated to our Minerva Research Initiative project: The Social, P
 
 You can find a copy of our white paper and fully length proposals here.
 
-- White Paper
-- Full Proposal
+- [White Paper](/files/minerva-files/White-paper-finalpdf.pdf)
+- [Full Proposal](/files/minerva-files/8c-fCOMBINED.pdf)
+
