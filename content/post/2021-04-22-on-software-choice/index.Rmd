@@ -34,7 +34,7 @@ What this post is not intended to be is a screed about why R is *objectively* th
 
 # Cost
 
-First, the most basic issue. Stata was always fairly expensive, but in the last year or two they announced that they were switching to an annual subscription model as opposed to the one-time charge for a perpetual license for whatever version you happened to purchase. Even when I started buying Stata as a graduate student in 2007, it was pretty expensive considering that I was making all of 17,000 per year before taxes. For students who are currently looking to purchase Stata Stata SE is running 179 per year for *student* pricing. The multicore variant is upwards of 175 per year. That's a lot. 
+First, the most basic issue. Stata was always fairly expensive, but in the last year or two they announced that they were switching to an annual subscription model as opposed to the one-time charge for a perpetual license for whatever version you happened to purchase. Even when I started buying Stata as a graduate student in 2007, it was pretty expensive considering that I was making all of 17,000 per year before taxes. For students who are currently looking to purchase Stata Stata SE is running 179 per year for *student* pricing. The multicore variant is upwards of 375 per year. That's a lot. 
 
 The upside of R here is clear—it's free. There *can* be costs associated with using R and some of the packages you can run across. Querying Google Maps, for example, can incur costs if you run over a certain threshold. But if your goal is primarily to read in data, clean it, and run a linear regression you're on solid ground.
 
