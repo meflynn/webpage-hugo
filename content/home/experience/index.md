@@ -18,11 +18,16 @@ date_format = "Jan 2006"
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
+[[experience]]
+  title = "Director of Security Studies"
+  company = "Kansas State University"
+  date_start = "2020-07-06"
 
 [[experience]]
   title = "Associate Director of Security Studies"
   company = "Kansas State University"
   date_start = "2020-05-15"
+  date_end = "2020-07-06"
 
 [[experience]]
   title = "Associate Professor"
