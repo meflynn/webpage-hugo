@@ -18,4 +18,8 @@ My teaching focuses on international politics, US foreign policy, and research m
 - POLSC 810 Security Studies Methodology (G)
 - POLSC 813 International Security (G)
 
-I'll post copies of my recent syllabi soon.
+---
+
+# Course pages
+
+- [US Foreign Policy (Fall 2021)](polsc343f21.classes.m-flynn.com)
