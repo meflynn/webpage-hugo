@@ -25,3 +25,8 @@ My teaching focuses on international politics, US foreign policy, and research m
 ## US Foreign Policy
 
 - [US Foreign Policy (Fall 2021)](https://polsc343f21.classes.m-flynn.com)
+
+
+## Security Studies Research Methods
+
+- [Security Studies Research Methods (Fall 2021)](https://polsc810f21.classes.m-flynn.com)
