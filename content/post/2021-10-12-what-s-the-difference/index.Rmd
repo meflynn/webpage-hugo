@@ -99,7 +99,7 @@ ttest.tab <- ttest.tab %>%
 
 ttest.tab
 ```
-
+ 
 The output in \@ref(tab:t-test-example) resembles the output for a regression model that we'll discuss below, but is much simpler. It tells us the names of the two groups, the mean score for each of the two groups, the difference between those mean scores, and the confidence interval, confidence interval limit values, and the test statistic or t value. There is also more information contained in the table about the type of t test and the direction of the test. Sometimes you might want to look at whether or not a group has a score that is higher or lower than another group, meaning that you have some specific direction in mind. In our case we're content to just look at a non-directional test to see if the means of the two groups are different without hypothesizing the direction of that difference in advance. For now our basic hypothesis is that the groups are different, and our null hypothesis is that there is no difference between the two groups.
 
 So is there a difference in the bipartisan voting behavior of the two parties? The t test shows that the Republican score is indeed lower than the Democratic score, and that this difference is statistically significant at the 0.95 level. The Democratic score is 5.63 higher than the Republican score as can be seen in the "Diff" column, and the test yields a test statistic of -11.17. This translates to a very low p value, which indicates the probability of seeing a test statistic greater than or equal to the observed test statistic of the null hypothesis were true. This is a lot, I know, but the important point is that researchers generally want **low** p values.
@@ -112,7 +112,7 @@ So this result is statistically significant, but is it **substantively** signifi
 The t test represents a very simple approach to analyzing the differences between two groups. While this can be useful, sometimes our data and the relationships between variables of interest are too complicated for a simple t test. In some cases we might want to know how groups compare when taking into account a number of other factors. Regression models are a broad class of statistical tools that allow us to model more complex relationships among various predictor and outcome variables. A fuller treatment of regression models is more than I want to get into for the purposes of this class, but there are a couple of points I want to highlight. 
 
 
-```{r linear-regression-example, fig.align='center'}
+```{r linear-regression-example, fig.align='center', warning=FALSE}
 
 example <- fabricate(
   party = add_level(
@@ -131,10 +131,10 @@ modelsummary(lm,
              stars = TRUE,
              caption = "Linear Regression Predicting Bipartisan Votes",
              output = "kableExtra") %>% 
-  kable_styling(html_font = "Arial", bootstrap_options = c("condensed", "hover")) %>% 
+  kable_styling(html_font = "Arial", bootstrap_options = c("condensed", "hover"), position = "center") %>% 
   row_spec(1, color = "red", bold = TRUE, background = "yellow") 
 ```
-
+ 
 First, Table \@ref(tab:linear-regression-example) shows the results of a regression model where we model bipartisan votes as a function of party identification. There's a lot here but we're only going to focus on a couple of points. 
 
 First, the higlighted row with the red text is really what we're interested in when comparing the two parties as we discuss above. The left column shows us the name of the variable—in this case it's the group we're interested in, which is the political party of the observed legislator. The right column shows us the correlation coefficient. Basically this tells us how big the difference is between the Democratic legislators (the reference group here) and the Republican legislators. Note that the number listed here, -5.634, is the same as the number listed in the t test above!
