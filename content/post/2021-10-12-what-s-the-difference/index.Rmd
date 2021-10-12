@@ -18,7 +18,6 @@ image:
   focal_point: ''
   preview_only: no
 projects: []
-customCSS: "/css/tables.css"
 ---
 
 ```{r setup, include=FALSE}
@@ -29,6 +28,14 @@ library(modelsummary)
 library(parameters)
 library(fabricatr)
 ```
+
+```{css, echo = FALSE}
+
+table{
+  width: 60%;
+}
+
+``` 
 
 In the social sciences we talk a lot about groups being different from one another. We might also talk about things like spending on certain programs going up or down over time. While this can seem direct, comparing quantities of interest can often be made complicated by a variety of factors. Below I'll provide an overview of some of the issues I want you to be aware of as we begin to read journal articles and other readings that will invariably discuss inter-group and inter-temporal differences.
   
