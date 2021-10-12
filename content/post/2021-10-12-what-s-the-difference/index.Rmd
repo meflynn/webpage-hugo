@@ -2,7 +2,7 @@
 title: What's the Difference?
 author: Michael E. Flynn
 date: '2021-10-12'
-slug: []
+slug: [whats-the-difference]
 categories:
   - stats
   - Blogging
