@@ -27,12 +27,13 @@ projects: []
 
 <style type="text/css">
 
-table 
-{
-    table-layout:fixed;
-    width:100%;
-}
-
+table {
+  display: block;
+  width: 800rem;
+  overflow-x: auto;
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+  }
 </style>
 <p>In the social sciences we talk a lot about groups being different from one another. We might also talk about things like spending on certain programs going up or down over time. While this can seem direct, comparing quantities of interest can often be made complicated by a variety of factors. Below I’ll provide an overview of some of the issues I want you to be aware of as we begin to read journal articles and other readings that will invariably discuss inter-group and inter-temporal differences.</p>
 <div id="comparing-two-groups" class="section level2">
@@ -49,8 +50,8 @@ The figure shows the distribution of the percentage of the 100 votes each legisl
 <div id="difference-of-means-tests" class="section level3">
 <h3>Difference of Means Tests</h3>
 <p>The sorts of statistical methods used by researchers vary quite a bit depending on the question at hand, but for this basic example we can start with something really simple called a difference of means test, or a t test. This test allows us to look at the values of two continuous variables and compare their mean values. Another way to think of this is to compare the values of a given variable across two groups. In our example we’re interested in comparing the mean number of bipartisan votes for Republican and Democratic legislators. So political party represents our grouping variable and the outcome of interest is the count of the number of bipartisan votes.</p>
-<table class="table" style="font-size: 6px; font-family: Arial; margin-left: auto; margin-right: auto;">
-<caption style="font-size: initial !important;">
+<table class="table" style="font-family: Arial; margin-left: auto; margin-right: auto;">
+<caption>
 <span id="tab:t-test-example">Table 1: </span>Difference of means test of bipartisan voting
 </caption>
 <thead>
@@ -98,43 +99,43 @@ Alternative
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left;">
+<td style="text-align:left;width: 3.5cm; min-width: 3.5cm;; ">
 Republican
 </td>
-<td style="text-align:left;">
+<td style="text-align:left;width: 3.5cm; min-width: 3.5cm;; ">
 Democrat
 </td>
-<td style="text-align:right;">
+<td style="text-align:right;width: 3.5cm; min-width: 3.5cm;; ">
 44.88
 </td>
-<td style="text-align:right;">
+<td style="text-align:right;width: 3.5cm; min-width: 3.5cm;; ">
 50.51
 </td>
-<td style="text-align:right;">
+<td style="text-align:right;width: 3.5cm; min-width: 3.5cm;; ">
 -5.63
 </td>
-<td style="text-align:right;">
+<td style="text-align:right;width: 3.5cm; min-width: 3.5cm;; ">
 0.95
 </td>
-<td style="text-align:right;">
+<td style="text-align:right;width: 3.5cm; min-width: 3.5cm;; ">
 -6.6
 </td>
-<td style="text-align:right;">
+<td style="text-align:right;width: 3.5cm; min-width: 3.5cm;; ">
 -4.67
 </td>
-<td style="text-align:right;">
+<td style="text-align:right;width: 3.5cm; min-width: 3.5cm;; ">
 -11.47
 </td>
-<td style="text-align:right;">
+<td style="text-align:right;width: 3.5cm; min-width: 3.5cm;; ">
 406.57
 </td>
-<td style="text-align:right;">
+<td style="text-align:right;width: 3.5cm; min-width: 3.5cm;; ">
 0
 </td>
-<td style="text-align:left;">
+<td style="text-align:left;width: 3.5cm; min-width: 3.5cm;; ">
 Welch Two Sample t-test
 </td>
-<td style="text-align:left;">
+<td style="text-align:left;width: 3.5cm; min-width: 3.5cm;; ">
 two.sided
 </td>
 </tr>

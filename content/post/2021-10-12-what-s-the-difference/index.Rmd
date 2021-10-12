@@ -31,15 +31,16 @@ library(fabricatr)
 
 ```{css, echo = FALSE}
 
-table 
-{
-    table-layout:fixed;
-    width:100%;
-}
+table {
+  display: block;
+  width: 800rem;
+  overflow-x: auto;
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+  }
+```
 
-``` 
-
-In the social sciences we talk a lot about groups being different from one another. We might also talk about things like spending on certain programs going up or down over time. While this can seem direct, comparing quantities of interest can often be made complicated by a variety of factors. Below I'll provide an overview of some of the issues I want you to be aware of as we begin to read journal articles and other readings that will invariably discuss inter-group and inter-temporal differences.
+In the social sciences we talk a lot about groups being different from one another. We might also talk about things like spending on certain programs going up or down over time. While this can seem direct, comparing quantities of interest can often be made complicated by a variety of factors. Below I'll provide an overview of some of the issues I want you to be aware of as we begin to read journal articles and other readings that will invariably discuss inter-group and inter-temporal differences. 
   
 
 ## Comparing two groups
@@ -103,9 +104,11 @@ ttest.tab <- parameters::parameters(ttest) %>%
   dplyr::rename(Mean_1 = Mean_Parameter1, Mean_2 = Mean_Parameter2, Diff = Difference)
 
 ttest.tab %>% 
-  kbl(digits = 2, fontsize = 7, 
+  kbl("html", 
+      digits = 2,
       caption = "Difference of means test of bipartisan voting") %>% 
-  kable_styling(html_font = "Arial", font_size = 6, position = "center")
+  kable_styling(html_font = "Arial") %>% 
+  column_spec(column = 1:13, width = "3.5cm; min-width: 3.5cm;") 
 
 ``` 
  
