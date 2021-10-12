@@ -18,6 +18,7 @@ image:
   focal_point: ''
   preview_only: no
 projects: []
+customCSS: "/css/tables.css"
 ---
 
 <script src="{{< blogdown/postref >}}index_files/header-attrs/header-attrs.js"></script>
@@ -40,8 +41,8 @@ The figure shows the distribution of the percentage of the 100 votes each legisl
 <div id="difference-of-means-tests" class="section level3">
 <h3>Difference of Means Tests</h3>
 <p>The sorts of statistical methods used by researchers vary quite a bit depending on the question at hand, but for this basic example we can start with something really simple called a difference of means test, or a t test. This test allows us to look at the values of two continuous variables and compare their mean values. Another way to think of this is to compare the values of a given variable across two groups. In our example we’re interested in comparing the mean number of bipartisan votes for Republican and Democratic legislators. So political party represents our grouping variable and the outcome of interest is the count of the number of bipartisan votes.</p>
-<table class="table table-condensed table-hover table-responsive" style="font-family: Arial; margin-left: auto; margin-right: auto;">
-<caption>
+<table class="table" style="font-size: 6px; font-family: Arial; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">
 <span id="tab:t-test-example">Table 1: </span>Difference of means test of bipartisan voting
 </caption>
 <thead>
@@ -138,7 +139,7 @@ two.sided
 <div id="regression-models" class="section level3">
 <h3>Regression Models</h3>
 <p>The t test represents a very simple approach to analyzing the differences between two groups. While this can be useful, sometimes our data and the relationships between variables of interest are too complicated for a simple t test. In some cases we might want to know how groups compare when taking into account a number of other factors. Regression models are a broad class of statistical tools that allow us to model more complex relationships among various predictor and outcome variables. A fuller treatment of regression models is more than I want to get into for the purposes of this class, but there are a couple of points I want to highlight.</p>
-<table style="NAborder-bottom: 0; width: auto !important; margin-left: auto; margin-right: auto; font-family: Arial; margin-left: auto; margin-right: auto;" class="table table table-condensed table-hover">
+<table style="NAborder-bottom: 0; width: auto !important; margin-left: auto; margin-right: auto; font-family: Arial; margin-left: auto; margin-right: auto;" class="table table">
 <caption>
 <span id="tab:linear-regression-example">Table 2: </span>Linear Regression Predicting Bipartisan Votes
 </caption>

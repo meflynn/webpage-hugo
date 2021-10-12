@@ -18,6 +18,7 @@ image:
   focal_point: ''
   preview_only: no
 projects: []
+customCSS: "/css/tables.css"
 ---
 
 ```{r setup, include=FALSE}
@@ -30,7 +31,7 @@ library(fabricatr)
 ```
 
 In the social sciences we talk a lot about groups being different from one another. We might also talk about things like spending on certain programs going up or down over time. While this can seem direct, comparing quantities of interest can often be made complicated by a variety of factors. Below I'll provide an overview of some of the issues I want you to be aware of as we begin to read journal articles and other readings that will invariably discuss inter-group and inter-temporal differences.
-
+  
 
 ## Comparing two groups
 
@@ -92,13 +93,12 @@ ttest.tab <- parameters::parameters(ttest) %>%
          Parameter2 = "Democrat") %>% 
   dplyr::rename(Mean_1 = Mean_Parameter1, Mean_2 = Mean_Parameter2, Diff = Difference)
 
-ttest.tab <- ttest.tab %>% 
-  kbl(digits = 2, fontsize = 3, 
+ttest.tab %>% 
+  kbl(digits = 2, fontsize = 7, 
       caption = "Difference of means test of bipartisan voting") %>% 
-  kable_styling(html_font = "Arial", bootstrap_options = c("condensed", "hover", "responsive"), position = "center", full_width = TRUE)
+  kable_styling(html_font = "Arial", font_size = 6, position = "center")
 
-ttest.tab
-```
+``` 
  
 The output in \@ref(tab:t-test-example) resembles the output for a regression model that we'll discuss below, but is much simpler. It tells us the names of the two groups, the mean score for each of the two groups, the difference between those mean scores, and the confidence interval, confidence interval limit values, and the test statistic or t value. There is also more information contained in the table about the type of t test and the direction of the test. Sometimes you might want to look at whether or not a group has a score that is higher or lower than another group, meaning that you have some specific direction in mind. In our case we're content to just look at a non-directional test to see if the means of the two groups are different without hypothesizing the direction of that difference in advance. For now our basic hypothesis is that the groups are different, and our null hypothesis is that there is no difference between the two groups.
 
@@ -112,7 +112,7 @@ So this result is statistically significant, but is it **substantively** signifi
 The t test represents a very simple approach to analyzing the differences between two groups. While this can be useful, sometimes our data and the relationships between variables of interest are too complicated for a simple t test. In some cases we might want to know how groups compare when taking into account a number of other factors. Regression models are a broad class of statistical tools that allow us to model more complex relationships among various predictor and outcome variables. A fuller treatment of regression models is more than I want to get into for the purposes of this class, but there are a couple of points I want to highlight. 
 
 
-```{r linear-regression-example, warning=FALSE}
+```{r linear-regression-example, warning=FALSE, fig.align='center'}
 
 example <- fabricate(
   party = add_level(
@@ -131,7 +131,7 @@ modelsummary(lm,
              stars = TRUE,
              caption = "Linear Regression Predicting Bipartisan Votes",
              output = "kableExtra") %>% 
-  kable_styling(html_font = "Arial", bootstrap_options = c("condensed", "hover"), position = "center") %>% 
+  kable_styling(html_font = "Arial", position = "center") %>% 
   row_spec(1, color = "red", bold = TRUE, background = "yellow") 
 ```
  
