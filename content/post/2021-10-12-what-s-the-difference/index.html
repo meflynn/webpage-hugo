@@ -42,7 +42,7 @@ The figure shows the distribution of the percentage of the 100 votes each legisl
 <p>The sorts of statistical methods used by researchers vary quite a bit depending on the question at hand, but for this basic example we can start with something really simple called a difference of means test, or a t test. This test allows us to look at the values of two continuous variables and compare their mean values. Another way to think of this is to compare the values of a given variable across two groups. In our example we’re interested in comparing the mean number of bipartisan votes for Republican and Democratic legislators. So political party represents our grouping variable and the outcome of interest is the count of the number of bipartisan votes.</p>
 <table class="table table-condensed table-hover table-responsive" style="font-family: Arial; margin-left: auto; margin-right: auto;">
 <caption>
-(#tab:t test example)Difference of means test of bipartisan voting
+<span id="tab:t-test-example">Table 1: </span>Difference of means test of bipartisan voting
 </caption>
 <thead>
 <tr>
@@ -131,7 +131,7 @@ two.sided
 </tr>
 </tbody>
 </table>
-<p>The output in <a href="#tab:t-test-example"><strong>??</strong></a> resembles the output for a regression model that we’ll discuss below, but is much simpler. It tells us the names of the two groups, the mean score for each of the two groups, the difference between those mean scores, and the confidence interval, confidence interval limit values, and the test statistic or t value. There is also more information contained in the table about the type of t test and the direction of the test. Sometimes you might want to look at whether or not a group has a score that is higher or lower than another group, meaning that you have some specific direction in mind. In our case we’re content to just look at a non-directional test to see if the means of the two groups are different without hypothesizing the direction of that difference in advance. For now our basic hypothesis is that the groups are different, and our null hypothesis is that there is no difference between the two groups.</p>
+<p>The output in <a href="#tab:t-test-example">1</a> resembles the output for a regression model that we’ll discuss below, but is much simpler. It tells us the names of the two groups, the mean score for each of the two groups, the difference between those mean scores, and the confidence interval, confidence interval limit values, and the test statistic or t value. There is also more information contained in the table about the type of t test and the direction of the test. Sometimes you might want to look at whether or not a group has a score that is higher or lower than another group, meaning that you have some specific direction in mind. In our case we’re content to just look at a non-directional test to see if the means of the two groups are different without hypothesizing the direction of that difference in advance. For now our basic hypothesis is that the groups are different, and our null hypothesis is that there is no difference between the two groups.</p>
 <p>So is there a difference in the bipartisan voting behavior of the two parties? The t test shows that the Republican score is indeed lower than the Democratic score, and that this difference is statistically significant at the 0.95 level. The Democratic score is 5.63 higher than the Republican score as can be seen in the “Diff” column, and the test yields a test statistic of -11.17. This translates to a very low p value, which indicates the probability of seeing a test statistic greater than or equal to the observed test statistic of the null hypothesis were true. This is a lot, I know, but the important point is that researchers generally want <strong>low</strong> p values.</p>
 <p>So this result is statistically significant, but is it <strong>substantively</strong> significant? That’s up to the researcher and requires some knowledge of the specific topic and/or broader domain expertise. In this example we see that, on average, Republican legislators case a bipartisan vote about 45% of the time and Democratic legislators case a bipartisan vote about 50% of the time. This this case we’re looking at a difference of approximately 5 percentage points. Again, whether or not this is substantively meaningful requires a lot of additional context, and my purpose here is less to tell you the answer to that specific question for this hypothetical and more to help you to learn to be thoughtful and cautious when consuming statistical analyses.</p>
 </div>
@@ -142,7 +142,7 @@ two.sided
 ## This warning is displayed once per session.</code></pre>
 <table style="NAborder-bottom: 0; width: auto !important; margin-left: auto; margin-right: auto; font-family: Arial; margin-left: auto; margin-right: auto;" class="table table table-condensed table-hover">
 <caption>
-<span id="tab:linear-regression-example">Table 1: </span>Linear Regression Predicting Bipartisan Votes
+<span id="tab:linear-regression-example">Table 2: </span>Linear Regression Predicting Bipartisan Votes
 </caption>
 <thead>
 <tr>
@@ -249,7 +249,7 @@ F
 </tr>
 </tfoot>
 </table>
-<p>First, Table <a href="#tab:linear-regression-example">1</a> shows the results of a regression model where we model bipartisan votes as a function of party identification. There’s a lot here but we’re only going to focus on a couple of points.</p>
+<p>First, Table <a href="#tab:linear-regression-example">2</a> shows the results of a regression model where we model bipartisan votes as a function of party identification. There’s a lot here but we’re only going to focus on a couple of points.</p>
 <p>First, the higlighted row with the red text is really what we’re interested in when comparing the two parties as we discuss above. The left column shows us the name of the variable—in this case it’s the group we’re interested in, which is the political party of the observed legislator. The right column shows us the correlation coefficient. Basically this tells us how big the difference is between the Democratic legislators (the reference group here) and the Republican legislators. Note that the number listed here, -5.634, is the same as the number listed in the t test above!</p>
 <p>The asterisks next to the coefficient represent the level of statistical significance associated with that coefficient. This is often used as a marker of importance, but for reasons we’ve discussed briefly above, this isn’t always a great basis on which to judge the substantive significance of a result.</p>
 <p>Where do these stars come from? Well, the number in the parentheses below the coefficient is the standard error of the coefficient. Basically, you divide the coefficient value by the standard error (i.e. <span class="math inline">\(-5.64/0.48\)</span>) and (according to some arbitrarily defined conventions) a coefficient earns another asterisk every time that resulting ratio crosses a particular threshold. Don’t worry about that too much right now.</p>

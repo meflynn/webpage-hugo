@@ -82,7 +82,7 @@ For example, a simple comparison of the mean values of the two parties suggests 
 
 The sorts of statistical methods used by researchers vary quite a bit depending on the question at hand, but for this basic example we can start with something really simple called a difference of means test, or a t test. This test allows us to look at the values of two continuous variables and compare their mean values. Another way to think of this is to compare the values of a given variable across two groups. In our example we're interested in comparing the mean number of bipartisan votes for Republican and Democratic legislators. So political party represents our grouping variable and the outcome of interest is the count of the number of bipartisan votes.
 
-```{r t-test-example, layout="l-body-outset"}
+```{r t-test-example, fig.width=40}
 
 ttest <- t.test(vote.df$votes[vote.df$party=="Republicans"], 
        vote.df$votes[vote.df$party=="Democrats"])
@@ -93,7 +93,8 @@ ttest.tab <- parameters::parameters(ttest) %>%
   dplyr::rename(Mean_1 = Mean_Parameter1, Mean_2 = Mean_Parameter2, Diff = Difference)
 
 ttest.tab <- ttest.tab %>% 
-  kbl(digits = 2, fontsize = 7, caption = "Difference of means test of bipartisan voting", label = "t test example") %>% 
+  kbl(digits = 2, fontsize = 7, 
+      caption = "Difference of means test of bipartisan voting") %>% 
   kable_styling(html_font = "Arial", bootstrap_options = c("condensed", "hover", "responsive"), position = "center", full_width = TRUE)
 
 ttest.tab
@@ -111,7 +112,7 @@ So this result is statistically significant, but is it **substantively** signifi
 The t test represents a very simple approach to analyzing the differences between two groups. While this can be useful, sometimes our data and the relationships between variables of interest are too complicated for a simple t test. In some cases we might want to know how groups compare when taking into account a number of other factors. Regression models are a broad class of statistical tools that allow us to model more complex relationships among various predictor and outcome variables. A fuller treatment of regression models is more than I want to get into for the purposes of this class, but there are a couple of points I want to highlight. 
 
 
-```{r linear-regression-example}
+```{r linear-regression-example, fig.align='center'}
 
 example <- fabricate(
   party = add_level(
