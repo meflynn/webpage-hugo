@@ -31,8 +31,10 @@ library(fabricatr)
 
 ```{css, echo = FALSE}
 
-table{
-  width: 60%;
+table 
+{
+    table-layout:fixed;
+    width:100%;
 }
 
 ``` 
