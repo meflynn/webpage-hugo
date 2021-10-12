@@ -29,16 +29,7 @@ library(parameters)
 library(fabricatr)
 ```
 
-```{css, echo = FALSE}
 
-table {
-  display: block;
-  width: 800rem;
-  overflow-x: auto;
-  margin-bottom: 1rem;
-  font-size: 0.8rem;
-  }
-```
 
 In the social sciences we talk a lot about groups being different from one another. We might also talk about things like spending on certain programs going up or down over time. While this can seem direct, comparing quantities of interest can often be made complicated by a variety of factors. Below I'll provide an overview of some of the issues I want you to be aware of as we begin to read journal articles and other readings that will invariably discuss inter-group and inter-temporal differences. 
   
@@ -93,7 +84,7 @@ For example, a simple comparison of the mean values of the two parties suggests 
 
 The sorts of statistical methods used by researchers vary quite a bit depending on the question at hand, but for this basic example we can start with something really simple called a difference of means test, or a t test. This test allows us to look at the values of two continuous variables and compare their mean values. Another way to think of this is to compare the values of a given variable across two groups. In our example we're interested in comparing the mean number of bipartisan votes for Republican and Democratic legislators. So political party represents our grouping variable and the outcome of interest is the count of the number of bipartisan votes.
 
-```{r t-test-example, fig.width=40}
+```{r t-test-example}
 
 ttest <- t.test(vote.df$votes[vote.df$party=="Republicans"], 
        vote.df$votes[vote.df$party=="Democrats"])
