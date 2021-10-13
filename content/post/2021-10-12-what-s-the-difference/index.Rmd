@@ -115,7 +115,7 @@ So this result is statistically significant, but is it **substantively** signifi
 The t test represents a very simple approach to analyzing the differences between two groups. While this can be useful, sometimes our data and the relationships between variables of interest are too complicated for a simple t test. In some cases we might want to know how groups compare when taking into account a number of other factors. Regression models are a broad class of statistical tools that allow us to model more complex relationships among various predictor and outcome variables. A fuller treatment of regression models is more than I want to get into for the purposes of this class, but there are a couple of points I want to highlight.
 
 
-```{r linear-regression-example, warning=FALSE, fig.align='center'}
+```{r linear-regression-example, warning=FALSE  }
 
 example <- fabricate(
   party = add_level(
@@ -133,6 +133,7 @@ modelsummary(lm,
              coef_map = c("partyRepublicans" = "Republicans", "(Intercept)" = "Intercept"),
              stars = TRUE,
              caption = "Linear Regression Predicting Bipartisan Votes",
+             align = "center",
              output = "html") %>% 
   kable_styling(html_font = "Arial", position = "center", full_width = TRUE) %>% 
   row_spec(1, color = "red", bold = TRUE, background = "yellow")
