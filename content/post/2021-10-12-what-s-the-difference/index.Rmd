@@ -135,7 +135,7 @@ modelsummary(lm,
              caption = "Linear Regression Predicting Bipartisan Votes",
              output = "html") %>% 
   kable_styling(html_font = "Arial", position = "center", full_width = TRUE) %>% 
-  row_spec(1, color = "red", bold = TRUE, background = "yellow")  
+  row_spec(1, color = "red", bold = TRUE, background = "yellow")
 ```
  
 First, Table \@ref(tab:linear-regression-example) shows the results of a regression model where we model bipartisan votes as a function of party identification. There's a lot here but we're only going to focus on a couple of points. 
