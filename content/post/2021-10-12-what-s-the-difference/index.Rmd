@@ -112,7 +112,7 @@ So this result is statistically significant, but is it **substantively** signifi
 
 ### Regression Models
 
-The t test represents a very simple approach to analyzing the differences between two groups. While this can be useful, sometimes our data and the relationships between variables of interest are too complicated for a simple t test. In some cases we might want to know how groups compare when taking into account a number of other factors. Regression models are a broad class of statistical tools that allow us to model more complex relationships among various predictor and outcome variables. A fuller treatment of regression models is more than I want to get into for the purposes of this class, but there are a couple of points I want to highlight. 
+The t test represents a very simple approach to analyzing the differences between two groups. While this can be useful, sometimes our data and the relationships between variables of interest are too complicated for a simple t test. In some cases we might want to know how groups compare when taking into account a number of other factors. Regression models are a broad class of statistical tools that allow us to model more complex relationships among various predictor and outcome variables. A fuller treatment of regression models is more than I want to get into for the purposes of this class, but there are a couple of points I want to highlight.
 
 
 ```{r linear-regression-example, warning=FALSE, fig.align='center'}
@@ -133,9 +133,9 @@ modelsummary(lm,
              coef_map = c("partyRepublicans" = "Republicans", "(Intercept)" = "Intercept"),
              stars = TRUE,
              caption = "Linear Regression Predicting Bipartisan Votes",
-             output = "kableExtra") %>% 
-  kable_styling(html_font = "Arial", position = "center") %>% 
-  row_spec(1, color = "red", bold = TRUE, background = "yellow") 
+             output = "html") %>% 
+  kable_styling(html_font = "Arial", position = "center", full_width = TRUE) %>% 
+  row_spec(1, color = "red", bold = TRUE, background = "yellow")  
 ```
  
 First, Table \@ref(tab:linear-regression-example) shows the results of a regression model where we model bipartisan votes as a function of party identification. There's a lot here but we're only going to focus on a couple of points. 

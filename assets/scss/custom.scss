@@ -3,10 +3,22 @@ h1 {
   font-weight: 700;
 }
 
-h2{
+h2 {
   font-size: 30px;
   font-weight: 700;
 }
+
+table,
+th,
+td
+ {
+  font-family: "Arial";
+  margin-right: auto;
+  margin-left: auto;
+  min-width: 50%;
+  position: relative;
+ }
+
 
 .article-container {
   max-width: 850px;
@@ -15,6 +27,3 @@ h2{
   font-size: 20px;
 }
 
-table {
-  width: 100%;
-}
