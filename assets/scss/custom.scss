@@ -1,6 +1,20 @@
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+h2{
+  font-size: 30px;
+  font-weight: 700;
+}
+
 .article-container {
   max-width: 850px;
   padding: 0 20px 0 20px;
   margin: 0 auto 0 auto;
   font-size: 20px;
+}
+
+table {
+  width: 100%;
 }
