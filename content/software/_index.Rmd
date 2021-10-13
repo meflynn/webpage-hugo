@@ -10,5 +10,5 @@ This page contains information on R software packages that I've developed.
   - [CRAN](https://cran.r-project.org/package=troopdata); [GitHub](https://github.com/meflynn/troopdata)
   
 - `{greenbook}`: Tools for Analyzing US Foreign Policy Spending Data
-  - [GitHub](https://github.com/meflynn/greenbook)
+  - [GitHub](https://github.com/meflynn/greenbook) 
   
