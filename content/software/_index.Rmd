@@ -33,7 +33,7 @@ This page contains information on R software packages that I've developed.
   <a href="https://github.com/meflynn/greenbok" class="card-link">GitHub</a>
 </div>
 </div>
-
+ 
 
 </div>
 </div>
