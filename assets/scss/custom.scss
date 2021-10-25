@@ -43,7 +43,7 @@ td
 
 /* Add some padding inside the card container */
 
-.card-img-top {
+.card-github-img-top {
   margin: 100px;
   padding: 10px 10px;
   width: 250px;
@@ -75,7 +75,7 @@ td
 }
 
 /* On mouse-over, add a deeper shadow */
-.card:hover {
+.card-github:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
