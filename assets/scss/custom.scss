@@ -29,8 +29,6 @@ td
 }
 
 
-
-
 .card-github {
   /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -39,6 +37,7 @@ td
   margin: 30 px;
   width: 300px;
   height: 600px;
+  border-radius: 20px;
 }
 
 /* Add some padding inside the card container */
@@ -47,7 +46,9 @@ td
   margin: 100px;
   padding: 10px 10px;
   width: 250px;
-  position: relative;}
+  position: relative;
+
+}
 
 .card-github-header {
   padding: 2px 5px;
