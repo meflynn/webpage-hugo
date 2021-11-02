@@ -1,5 +1,6 @@
 ---
 title: Minerva Research Initiative Project Overview
+subtitle:  The Social, Political, and Economic Consequences of the US Military's Overseas Deployments
 author: Michael E. Flynn
 output:
   blogdown::html_page:
@@ -8,7 +9,7 @@ output:
 
 This page is dedicated to our Minerva Research Initiative project: The Social, Political, and Economic Consequences of the US Military's Overseas Deployments [(Grant # W911NF-18-1-0087)](https://minerva.defense.gov/Research/Funded-Projects/Article/1792285/effects-of-us-overseas-military-presence/). 
 
-## Research Team Members
+## Research Team 
 
 - [Michael E. Flynn](https://m-flynn.com/)
 - [Michael A. Allen](http://ma-allen.com/)
