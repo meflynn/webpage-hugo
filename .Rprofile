@@ -23,7 +23,7 @@ options(
 options(
   blogdown.hugo.version = "0.84.0",
   blogdown.author = "Michael E. Flynn",
-  blogdown.ext = ".Rmarkdown",
+  blogdown.ext = "Rmd",
   blogdown.subdir = "post",
   blogdown.yaml.empty = TRUE,
   blogdown.new_bundle = TRUE
