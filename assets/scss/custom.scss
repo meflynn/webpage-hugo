@@ -21,7 +21,7 @@ td
 
 
 .article-container {
-  max-width: 75%;
+  max-width: 1050;
   padding: 0 5px 0 5px;
   margin: 0 auto 0 auto;
   font-size: 20px;
@@ -91,3 +91,5 @@ TableOfContents, .docs-toc-title {
   border-left: 1px solid $sta-primary;
   /* "$sta-primary" is the primary colour from the theme (sass/scss) */
 }
+
+
