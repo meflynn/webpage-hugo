@@ -66,7 +66,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\
     codeFences = false  # Disable Hugo's code highlighter as it conflicts with Academic's highligher.
   [markup.tableOfContents]
     startLevel = 1
-    endLevel = 2
+    endLevel = 3
 
 [imaging]
   resampleFilter = "lanczos"
