@@ -1,5 +1,5 @@
 ---
-title: Minerva Research Initiative Project Overview
+title: Minerva Research Initiative Project
 subtitle:  The Social, Political, and Economic Consequences of the US Military's Overseas Deployments
 author: Michael E. Flynn
 output:
