@@ -18,6 +18,9 @@ image:
   focal_point: ''
   preview_only: true
 projects: []
+output:
+  blogdown::html_page:
+    toc: true
 ---
 <script src="{{< blogdown/postref >}}index_files/kePrint/kePrint.js"></script>
 <link href="{{< blogdown/postref >}}index_files/lightable/lightable.css" rel="stylesheet" />
@@ -119,7 +122,7 @@ The t test represents a very simple approach to analyzing the differences betwee
 <tbody>
   <tr>
    <td style="text-align:left;font-weight: bold;color: red !important;background-color: yellow !important;"> Republicans </td>
-   <td style="text-align:center;font-weight: bold;color: red !important;background-color: yellow !important;"> −5.634*** </td>
+   <td style="text-align:center;font-weight: bold;color: red !important;background-color: yellow !important;"> -5.634*** </td>
   </tr>
   <tr>
    <td style="text-align:left;">  </td>
@@ -155,7 +158,7 @@ The t test represents a very simple approach to analyzing the differences betwee
   </tr>
   <tr>
    <td style="text-align:left;"> Log.Lik. </td>
-   <td style="text-align:center;"> −1318.600 </td>
+   <td style="text-align:center;"> -1318.600 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> F </td>
