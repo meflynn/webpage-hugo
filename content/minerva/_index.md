@@ -22,7 +22,6 @@ You can find a copy of our white paper and fully length proposals here.
 - [Full Proposal](/files/minerva-files/8c-fCOMBINED.pdf)
 
 
-
 ## Data Documentation 
 
 - [Codebook for Survey](/files/minerva-files/codebook-survey.pdf)
@@ -46,5 +45,9 @@ You can find a copy of our white paper and fully length proposals here.
   - Also see the [`{troopdata}`](https://m-flynn.com/software/) package for most up-to-date military construction spending data.
 
 
+## Research Publications
 
+- [Allen, Michael A., Michael E. Flynn, Carla Martinez Machain, and Andrew Stravers. 2020. Outside the wire: Us military deployments and public opinion in host states. American Political Science Review. 114(2): 326-341.](https://doi.org/10.1017/S0003055419000868)
 
+Let's test the new toc 
+ 

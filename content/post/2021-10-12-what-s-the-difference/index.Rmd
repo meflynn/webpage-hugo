@@ -133,7 +133,6 @@ modelsummary(lm,
              coef_map = c("partyRepublicans" = "Republicans", "(Intercept)" = "Intercept"),
              stars = TRUE,
              caption = "Linear Regression Predicting Bipartisan Votes",
-             align = "center",
              output = "html") %>% 
   kable_styling(html_font = "Arial", position = "center", full_width = TRUE) %>% 
   row_spec(1, color = "red", bold = TRUE, background = "yellow")

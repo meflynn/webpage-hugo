@@ -85,3 +85,9 @@ td
  margin: 20px;
 }
 
+
+
+TableOfContents, .docs-toc-title {
+  border-left: 1px solid $sta-primary;
+  /* "$sta-primary" is the primary colour from the theme (sass/scss) */
+}
