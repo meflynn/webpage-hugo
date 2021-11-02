@@ -1,7 +1,7 @@
 ---
 title: Minerva Research Initiative Project Overview
 output:
-  blogdown::html_page:
+  distill::distill_article:
     toc: true 
 --- 
 
