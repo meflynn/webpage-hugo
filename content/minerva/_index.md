@@ -2,7 +2,7 @@
 title: Minerva Research Initiative Project Overview
 output:
   blogdown::html_page:
-    toc: true
+    toc: true 
 --- 
   
 This page is dedicated to our Minerva Research Initiative project: The Social, Political, and Economic Consequences of the US Military's Overseas Deployments [(Grant # W911NF-18-1-0087)](https://minerva.defense.gov/Research/Funded-Projects/Article/1792285/effects-of-us-overseas-military-presence/). 
@@ -48,4 +48,6 @@ You can find a copy of our white paper and fully length proposals here.
 ## Research Publications
 
 - [Allen, Michael A., Michael E. Flynn, Carla Martinez Machain, and Andrew Stravers. 2020. Outside the wire: US military deployments and public opinion in host states. American Political Science Review. 114(2): 326-341.](https://doi.org/10.1017/S0003055419000868)
+
+
 
