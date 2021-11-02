@@ -47,5 +47,5 @@ You can find a copy of our white paper and fully length proposals here.
 
 ## Research Publications
 
-- [Allen, Michael A., Michael E. Flynn, Carla Martinez Machain, and Andrew Stravers. 2020. Outside the wire: Us military deployments and public opinion in host states. American Political Science Review. 114(2): 326-341.](https://doi.org/10.1017/S0003055419000868)
+- [Allen, Michael A., Michael E. Flynn, Carla Martinez Machain, and Andrew Stravers. 2020. Outside the wire: US military deployments and public opinion in host states. American Political Science Review. 114(2): 326-341.](https://doi.org/10.1017/S0003055419000868)
 
