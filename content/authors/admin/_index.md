@@ -78,5 +78,3 @@ My name is Michael Flynn. I’m currently an associate professor of political sc
 I am currently working on a long-term book project that focuses on the politics of US overseas military deployments. This is currently under contract with Oxford University Press.
 
 I also edit and contribute to the Quantitative Peace, a blog dedicated to political science, science fiction, pop culture, and other random thoughts.
-
-This page is currently under construction so please excuse the oddities and errors. Some are temporary.
