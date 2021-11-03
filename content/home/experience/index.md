@@ -32,28 +32,22 @@ date_format = "Jan 2006"
 [[experience]]
   title = "Associate Professor"
   company = "Kansas State University"
-  company_url = ""
   location = "Kansas"
   date_start = "2018-08-15"
-  date_end = ""
-  description = """ """
+
   
 [[experience]]
   title = "Assistant Professor"
   company = "Kansas State University"
-  company_url = ""
   location = "Kansas"
   date_start = "2014-08-15"
   date_end = "2018-08-15"
-  description = """ """
 
 [[experience]]
   title = "Postdoctoral Fellow"
   company = "University of Alabama"
-  company_url = ""
   location = "Alabama"
   date_start = "2013-07-01"
   date_end = "2014-08-15"
-  description = """ """
 
 +++
