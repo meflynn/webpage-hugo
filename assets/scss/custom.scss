@@ -95,7 +95,10 @@ $container-max-widths: (
 /* Frame article metadata */
 
 .article-metadata{
-  color: #512888;
+  color: "white";
+  background-color: #512888;
+  font-size: 14;
+  height: 30px;
 }
 
 TableOfContents, .docs-toc-title {
