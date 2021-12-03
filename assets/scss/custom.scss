@@ -96,11 +96,29 @@ $container-max-widths: (
 
 /* Frame article metadata */
 
-.article-metadata{
+.article-metadata {
   background: #512888;
-  color: "white";
-  font-size: 14;
   height: 30px;
+}
+
+.article-date{
+  color: "white";
+  size: 12;
+}
+
+.article-reading-time {
+  color: "white";
+  size: 12;
+}
+
+.article-categories {
+  color: "white";
+  size: 12;
+}
+
+.middot-divider{
+  color: "white";
+  size: 12px;
 }
 
 /*
