@@ -12,7 +12,7 @@ table,
 th,
 td
  {
-  font-family: "Arial";
+  font-family: "Oswald";
   min-width: 50%;
   margin-left: auto;
   margin-right: auto;
@@ -103,9 +103,11 @@ $container-max-widths: (
   height: 30px;
 }
 
+/*
 TableOfContents, .docs-toc-title {
   border-left: 1px solid $sta-primary;
   /* "$sta-primary" is the primary colour from the theme (sass/scss) */
 }
+*/
 
 
