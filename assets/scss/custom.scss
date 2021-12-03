@@ -28,6 +28,7 @@ td
   font-size: 20px;
 }
 
+/*
 $container-max-widths: (
   sm: 560px,
   md: 740px,
@@ -35,6 +36,7 @@ $container-max-widths: (
   xl: 1220px
 );
 
+*/
 
 .card-github {
   /* Add shadows to create the "card" effect */
@@ -95,8 +97,8 @@ $container-max-widths: (
 /* Frame article metadata */
 
 .article-metadata{
+  background: #512888;
   color: "white";
-  background-color: #512888;
   font-size: 14;
   height: 30px;
 }
