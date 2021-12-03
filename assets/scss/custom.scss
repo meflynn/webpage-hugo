@@ -92,7 +92,11 @@ $container-max-widths: (
  margin: 20px;
 }
 
+/* Frame article metadata */
 
+.article-metadata{
+  color: #512888;
+}
 
 TableOfContents, .docs-toc-title {
   border-left: 1px solid $sta-primary;
