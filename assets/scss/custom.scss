@@ -98,34 +98,11 @@ $container-max-widths: (
 
 .article-metadata {
   background: #512888;
+  color:"white";
+  size: 20;
   height: 30px;
 }
 
-.article-date{
-  color: "white";
-  size: 12;
-}
 
-.article-reading-time {
-  color: "white";
-  size: 12;
-}
-
-.article-categories {
-  color: "white";
-  size: 12;
-}
-
-.middot-divider{
-  color: "white";
-  size: 12px;
-}
-
-/*
-TableOfContents, .docs-toc-title {
-  border-left: 1px solid $sta-primary;
-  /* "$sta-primary" is the primary colour from the theme (sass/scss) */
-}
-*/
 
 
