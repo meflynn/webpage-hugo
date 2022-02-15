@@ -1,3 +1,5 @@
+/* Sitewide settings */
+
 h1 {
   font-size: 40px;
   font-weight: 700;
@@ -38,6 +40,9 @@ $container-max-widths: (
 
 */
 
+
+/* GitHub card container */
+
 .card-github {
   /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -49,7 +54,6 @@ $container-max-widths: (
   border-radius: 20px;
 }
 
-/* Add some padding inside the card container */
 
 .card-github-img-top {
   margin: 100px;
@@ -93,6 +97,7 @@ $container-max-widths: (
 .column {
  margin: 20px;
 }
+
 
 /* Frame article metadata */
 
