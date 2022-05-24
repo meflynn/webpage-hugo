@@ -21,7 +21,7 @@ options(
 
 # fix Hugo version
 options(
-  blogdown.hugo.version = "0.84.0",
+  blogdown.hugo.version = "0.81.0",
   blogdown.author = "Michael E. Flynn",
   blogdown.ext = ".Rmd",
   blogdown.subdir = "post",
