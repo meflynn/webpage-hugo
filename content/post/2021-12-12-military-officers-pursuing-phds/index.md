@@ -133,9 +133,9 @@ Furthermore, people in the military may have pressing considerations beyond the 
 
 <blockquote class="twitter-tweet">
 <p lang="en" dir="ltr">
-Spot on. Internally, we have a love/hate relationship with sending officers to civilian grad programs. There is a tension between the need for broad education and considering it time off or “taking a knee.”
+I don't know who in the military is responsible for creating these programs that are sending officers out with the expectation that they're going to readily get a PhD in three years, but stop it.
 </p>
-— Nick Frazier ((**NickRFrazier?**)) <a href="https://twitter.com/NickRFrazier/status/1469428765247918091?ref_src=twsrc%5Etfw">December 10, 2021</a>
+— Michael Flynn ((**flynnpolsci?**)) <a href="https://twitter.com/flynnpolsci/status/1469352835225731084?ref_src=twsrc%5Etfw">December 10, 2021</a>
 </blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
