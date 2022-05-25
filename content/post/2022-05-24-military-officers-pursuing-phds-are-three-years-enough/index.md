@@ -34,8 +34,6 @@ projects: []
 
 ## Background
 
-Are three years enough time for a military student to complete a PhD program in political science or related fields? The original post that sparked this exchange is below, but I’ll include other key followup posts, too.
-
 <blockquote class="twitter-tweet">
 <p lang="en" dir="ltr">
 I don't know who in the military is responsible for creating these programs that are sending officers out with the expectation that they're going to readily get a PhD in three years, but stop it.
@@ -43,6 +41,8 @@ I don't know who in the military is responsible for creating these programs that
 — Michael Flynn ((**flynnpolsci?**)) <a href="https://twitter.com/flynnpolsci/status/1469352835225731084?ref_src=twsrc%5Etfw">December 10, 2021</a>
 </blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+Are three years enough time for a military student to complete a PhD program in political science or related fields? The original post that sparked this exchange is below, but I’ll include other key followup posts, too.
 
 Many active duty military officers who are interested in pursuing a PhD do so through some different avenues. I’m not going to claim expert knowledge as to all the pathways, but one that often pops up is the Advanced Strategic Planning and Policy Program (ASP3). The US Army’s School of Advanced Military Studies [describes the ASP3 program](https://usacac.army.mil/organizations/cace/cgsc/sams) as follows:
 
