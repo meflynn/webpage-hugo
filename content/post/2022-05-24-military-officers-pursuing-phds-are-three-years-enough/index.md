@@ -36,9 +36,13 @@ projects: []
 
 <blockquote class="twitter-tweet">
 <p lang="en" dir="ltr">
-I don't know who in the military is responsible for creating these programs that are sending officers out with the expectation that they're going to readily get a PhD in three years, but stop it.
+
+I don’t know who in the military is responsible for creating these programs that are sending officers out with the expectation that they’re going to readily get a PhD in three years, but stop it.
+
 </p>
+
 — Michael Flynn ((**flynnpolsci?**)) <a href="https://twitter.com/flynnpolsci/status/1469352835225731084?ref_src=twsrc%5Etfw">December 10, 2021</a>
+
 </blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -134,9 +138,13 @@ Furthermore, people in the military may have pressing considerations beyond the 
 
 <blockquote class="twitter-tweet">
 <p lang="en" dir="ltr">
-I don't know who in the military is responsible for creating these programs that are sending officers out with the expectation that they're going to readily get a PhD in three years, but stop it.
+
+I don’t know who in the military is responsible for creating these programs that are sending officers out with the expectation that they’re going to readily get a PhD in three years, but stop it.
+
 </p>
+
 — Michael Flynn ((**flynnpolsci?**)) <a href="https://twitter.com/flynnpolsci/status/1469352835225731084?ref_src=twsrc%5Etfw">December 10, 2021</a>
+
 </blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -162,9 +170,13 @@ Some of this is echoed in tweets by Will Winecoff, an associate professor at the
 
 <blockquote class="twitter-tweet">
 <p lang="en" dir="ltr">
+
 In my experience it doesn’t get done in 3 years, but it does get done. These folks are highly-motivated and have long track records of diligence. I have a lot of respect for the ones who enter these programs.
+
 </p>
+
 — W. K. Winecoff ((**whinecough?**)) <a href="https://twitter.com/whinecough/status/1469447342352912394?ref_src=twsrc%5Etfw">December 10, 2021</a>
+
 </blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
