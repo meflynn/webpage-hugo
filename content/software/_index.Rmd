@@ -2,7 +2,7 @@
 # Display name
 title: Software
 ---
- 
+
 This page contains information on R software packages that I've developed.
  
 <div class="row">
