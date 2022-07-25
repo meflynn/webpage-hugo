@@ -345,3 +345,5 @@ modelsummary::modelsummary(mod.list,
 There are a few things I'd like to tweak. For example, `{modelsummary}` adds little slashes before the outcome variable name and inserts the name from the model list before that. I leave the list entries blank to avoid this since horizontal space is a premium. 
 
 Blogdown/hugo is also being a bit frustrating with the final table. I've tried making the font larger, but for whatever reason the horizontal scrollbar  isn't working with the kableExtra table in this environment. Not great, but it looks ok for now. Sizing and scale were a littl tough to tweak in Tex files, but I got it more  or less where it needed to be by the end. I'm sure someone with a little more skill than me can figure out some of the hiccups.
+
+There's way more you can do to cusomtize the output of these tables, particularly in the footer. You might want to add particular model fit or summary statistics, and the `glance.custom()` function is a great place to specify what you want. Much is possible, but I'm going to stop here for now since it took me something like a month to get this posted.
