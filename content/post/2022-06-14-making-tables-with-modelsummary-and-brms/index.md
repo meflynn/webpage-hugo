@@ -34,6 +34,8 @@ projects: []
 
 **tl;dr: Learn how to make some cool and customizable tables for multinomial logit models using {brms} and {modelsummary}.**
 
+**UPDATE: Vincent informed me that the most recent version of `{modelsummary}` relies entirely on the `{parameters}` package. Apparently the `{broom}` package will no longer be actively developing. Keep this in mind if you're trying this approach and get stuck.**
+
 # Background
 
 I'm coming off a couple of long projects where we were using a lot of multinomial logit models, and making publication quality tables was a major challenge. Actually, started using {brms} several years ago partly because I had data where we had 1) lots of individuals making choices, 2) those individuals were all grouped in some pretty clear ways, and 3) we were also interested in modeling group-level characteristics that might relate to individuals' choices. This more or less marked my full transition from Stata to R and from frequentist stats to Bayesian stats. 
