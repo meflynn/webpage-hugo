@@ -77,3 +77,6 @@ My name is Michael Flynn. I’m currently an associate professor of political sc
 
 I have recently finished a book project that focuses on the politics of US overseas military deployments. This is forthcoming with Oxford University Press and will be released in late 2022 or early 2023.
 
+<img src="/media/Allen_etal_Beyond_cover_OUP.jpg" style="width: 35%; margin: auto;">
+
+
