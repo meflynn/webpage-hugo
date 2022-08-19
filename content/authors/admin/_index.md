@@ -75,8 +75,9 @@ user_groups:
 
 My name is Michael Flynn. I’m currently an associate professor of political science and director of the security studies program at Kansas State University. My research focuses primarily on the political economy of states’ foreign policy behavior. My peer-reviewed research has appeared in the American Political Science Review, the British Journal of Political Science, International Studies Quarterly, and various other journals. I have also published several blog posts or op-eds in outlets like the Monkey Cage, The Conversation, and Political Violence @ a Glance. My research has also been featured in media outlets like The Economist, Al Jazeera, and Newsweek.
 
-I have recently finished a book project that focuses on the politics of US overseas military deployments. This is forthcoming with Oxford University Press and will be released in late 2022 or early 2023.
+I have recently finished a book project that focuses on the politics of US overseas military deployments. This is forthcoming with Oxford University Press and will be released in October of 2022 and is available for pre-order at Amazon. Click the book image below!
 
+<a href="https://www.amazon.com/Beyond-Wire-Military-Deployments-BRIDGING/dp/0197633412/ref=sr_1_1?crid=2ZYU5VTHOLCG4&keywords=beyond+the+wire+flynn&qid=1660864960&sprefix=beyond+the+wire+flynn%2Caps%2C107&sr=8-1">
 <img src="/media/Allen_etal_Beyond_cover_OUP.jpg" style="width: 45%; margin: auto;">
-
+</a>
 

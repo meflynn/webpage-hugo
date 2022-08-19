@@ -61,7 +61,7 @@ For example, a simple comparison of the mean values of the two parties suggests 
 
 The sorts of statistical methods used by researchers vary quite a bit depending on the question at hand, but for this basic example we can start with something really simple called a difference of means test, or a t test. This test allows us to look at the values of two continuous variables and compare their mean values. Another way to think of this is to compare the values of a given variable across two groups. In our example we're interested in comparing the mean number of bipartisan votes for Republican and Democratic legislators. So political party represents our grouping variable and the outcome of interest is the count of the number of bipartisan votes.
 
-<table class="table" style="font-family: Arial; margin-left: auto; margin-right: auto;">
+<div style="border: 0px; margin: autooverflow-x: scroll; width:90%; "><table class="table" style="font-family: Arial; margin-left: auto; margin-right: auto;">
 <caption>Table 1: Difference of means test of bipartisan voting</caption>
  <thead>
   <tr>
@@ -97,7 +97,7 @@ The sorts of statistical methods used by researchers vary quite a bit depending 
    <td style="text-align:left;width: 3.5cm; min-width: 3.5cm;; "> two.sided </td>
   </tr>
 </tbody>
-</table>
+</table></div>
  
 The output in <a href="#tab:t-test-example">1</a> resembles the output for a regression model that we'll discuss below, but is much simpler. It tells us the names of the two groups, the mean score for each of the two groups, the difference between those mean scores, and the confidence interval, confidence interval limit values, and the test statistic or t value. There is also more information contained in the table about the type of t test and the direction of the test. Sometimes you might want to look at whether or not a group has a score that is higher or lower than another group, meaning that you have some specific direction in mind. In our case we're content to just look at a non-directional test to see if the means of the two groups are different without hypothesizing the direction of that difference in advance. For now our basic hypothesis is that the groups are different, and our null hypothesis is that there is no difference between the two groups.
 
@@ -108,10 +108,10 @@ So this result is statistically significant, but is it **substantively** signifi
 
 ### Regression Models
 
-The t test represents a very simple approach to analyzing the differences between two groups. While this can be useful, sometimes our data and the relationships between variables of interest are too complicated for a simple t test. In some cases we might want to know how groups compare when taking into account a number of other factors. Regression models are a broad class of statistical tools that allow us to model more complex relationships among various predictor and outcome variables. A fuller treatment of regression models is more than I want to get into for the purposes of this class, but there are a couple of points I want to highlight.
+The t test represents a very simple approach to analyzing the differences between two groups. While this can be useful, sometimes our data and the relationships between variables of interest are too complicated for a simple t test. In some cases we might want to know how groups compare when taking into account a number of other factors. Regression models are a broad class of statistical tools that allow us to model more complex relationships among various predictor and outcome variables. A fuller treatment of regression models is more than I want to get into for the purposes of this class, but there are a couple of points I want to highlight. 
 
 
-<table style="NAborder-bottom: 0; width: auto !important; margin-left: auto; margin-right: auto; font-family: Arial; margin-left: auto; margin-right: auto;" class="table table">
+<table style="NAborder-bottom: 0; width: auto !important; margin-left: auto; margin-right: auto; width: auto !important; margin-left: auto; margin-right: auto;" class="table table">
 <caption>Table 2: Linear Regression Predicting Bipartisan Votes</caption>
  <thead>
   <tr>
@@ -122,7 +122,7 @@ The t test represents a very simple approach to analyzing the differences betwee
 <tbody>
   <tr>
    <td style="text-align:left;font-weight: bold;color: red !important;background-color: yellow !important;"> Republicans </td>
-   <td style="text-align:center;font-weight: bold;color: red !important;background-color: yellow !important;"> -5.634*** </td>
+   <td style="text-align:center;font-weight: bold;color: red !important;background-color: yellow !important;"> −5.634*** </td>
   </tr>
   <tr>
    <td style="text-align:left;">  </td>
@@ -158,11 +158,15 @@ The t test represents a very simple approach to analyzing the differences betwee
   </tr>
   <tr>
    <td style="text-align:left;"> Log.Lik. </td>
-   <td style="text-align:center;"> -1318.600 </td>
+   <td style="text-align:center;"> −1318.600 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> F </td>
    <td style="text-align:center;"> 133.598 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> RMSE </td>
+   <td style="text-align:center;"> 5.06 </td>
   </tr>
 </tbody>
 <tfoot><tr><td style="padding: 0; " colspan="100%">
